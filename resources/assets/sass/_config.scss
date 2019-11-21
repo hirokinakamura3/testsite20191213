@@ -1,0 +1,25 @@
+$breakpoint-tablet: 960px;
+$breakpoint-mobile: 480px;
+
+$color_1: #fff;
+$color_2: #8BC34A;
+$background_color_1: #dd4b39;
+
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
