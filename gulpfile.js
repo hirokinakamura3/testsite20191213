@@ -23,7 +23,7 @@ gulp.task("default", function () {
                         .on("error", sass.logError)
                 )
                 // cssフォルダー以下に保存
-                .pipe(gulp.dest("resources/src/css"))
+                .pipe(gulp.dest("resources/public/css"))
         );
     });
 });
