@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100%;
   height: 140px;
@@ -10,14 +11,14 @@ header ul {
   height: 90px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-flow: row;
   margin: 0 auto;
   padding: 0;
 }
 
 header ul li {
   width: 200px;
-  margin-right: 0px;
+  margin-right: 10px;
   list-style: none;
 }
 
@@ -37,6 +38,7 @@ header ul li a {
 
 header ul li .buyBtn {
   background-color: #ee275b;
+  color: #ffffff;
 }
 
 header ul li img {
@@ -74,61 +76,472 @@ header .header__content p br {
   background-color: #5087bb;
 }
 
-.container {
+.slider1 img {
   width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  background-color: #cfd6e9;
 }
 
-.container .contents {
+.container1 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.container1 .contents {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  height: 546px;
-  background-color: #cfd6e9;
+  height: auto;
+  background-color: #ffffff;
 }
 
-.container .contents section {
+.container1 .contents section {
   padding-top: 30px;
 }
 
-.container .contents section h1 {
+.container1 .contents section h1 {
   width: 100%;
   margin: 0;
 }
 
-.container .contents section h1 img {
-  width: 75%;
+.container1 .contents section h1 img {
+  width: 80%;
   display: block;
   margin: 0 auto;
 }
 
-.container .contents section p {
+.container1 .contents section p {
   text-align: center;
   font-size: 24px;
 }
 
-.container .contents section p span {
+.container1 .contents section p span {
   color: #fa7800;
   font-size: 30px;
   font-weight: bold;
 }
 
-.container .contents section a {
+.container1 .contents section a {
   display: block;
   background-color: #e6e6e6;
   color: #808080;
   width: 75%;
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
   padding: 10px 0;
   font-size: 20px;
   text-decoration: none;
   border-radius: 30px;
 }
 
-.container .contents section a:nth-of-type(2) {
+.container1 .contents section a:nth-of-type(2) {
   margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #fa7800;
+  color: #fa7800;
+}
+
+.container2 {
+  width: 100%;
+  background-color: #a6a6a6;
+  height: auto;
+}
+
+.container2 .contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #a6a6a6;
+}
+
+.container2 .contents section {
+  padding-top: 30px;
+}
+
+.container2 .contents section .obachan {
+  background-color: #a6a6a6;
+}
+
+.container2 .contents section .obachan img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container3 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.container3 .contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+.container3 .contents section {
+  padding-top: 30px;
+}
+
+.container3 .contents section h1 {
+  width: 100%;
+  margin: 0;
+}
+
+.container3 .contents section h1 img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container3 .contents section .lashic-room {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.container3 .contents section .lashic-room img {
+  width: 40%;
+}
+
+.container3 .contents section .lashic-room p {
+  margin: 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container3 .contents section .lashic-room p:before {
+  content: "＋";
+  background-color: #fa7800;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.container3 .contents section h2 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.container3 .contents section h2 img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container3 .contents section p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.container3 .contents section p span {
+  color: #fa7800;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container3 .contents section .text1 {
+  margin-top: 20px;
+}
+
+.container3 .contents section a {
+  display: block;
+  background-color: #ffffff;
+  color: #fa7800;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #fa7800;
+}
+
+.container3 .triangle {
+  position: absolute;
+  bottom: -4.5%;
+  width: 100%;
+}
+
+.container3 .triangle p {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #7bcedb;
+  font-size: 50px;
+}
+
+.container4 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.container4 .contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.container4 .contents section {
+  width: 100%;
+}
+
+.container4 .contents section h1 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container4 .contents section h1 img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container4 .contents section h2 {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.container4 .contents section h2 img {
+  width: 55%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container4 .contents section .plicePlan {
+  text-align: center;
+  font-size: 26px;
+  border: 2px solid #00a0b9;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 10px;
+  color: #00a0b9;
+}
+
+.container4 .contents section .pricelist {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container4 .contents section .pricelist img {
+  display: block;
+  width: 45%;
+}
+
+.container4 .contents section .pricelist .plus {
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.container4 .contents section .caution {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container4 .contents section .triangle {
+  display: block;
+  margin-top: 40px;
+}
+
+.container4 .contents section .triangle p {
+  text-align: center;
+  color: #7bcedb;
+  font-size: 50px;
+}
+
+.container5 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #5087bb;
+}
+
+.container5 .contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #5087bb;
+}
+
+.container5 .contents p {
+  width: 100%;
+  text-align: center;
+  line-height: 120px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.container6 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container6 .contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.container6 .contents section .firstBox {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #00a0b9;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container6 .contents section .firstBox p {
+  text-align: center;
+  background-color: #00a0b9;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 10px 0;
+}
+
+.container6 .contents section .firstBox form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.container6 .contents section .firstBox form input {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.container6 .contents section .firstBox form p {
+  background-color: #fff;
+  color: #000000;
+  font-size: 24px;
+}
+
+.container6 .contents section .planList {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container6 .contents section .planList .planBox {
+  display: flex;
+  flex-flow: column;
+  width: 32%;
+}
+
+.container6 .contents section .planList .planBox .planBoxPlus {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container6 .contents section .planList .planBox .plan {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #00a0b9;
+  margin-top: 20px;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceLabel {
+  text-align: center;
+  background-color: #00a0b9;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 10px 0;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceContent {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceContent .plice1 {
+  text-align: center;
+  color: #fa7800;
+  font-weight: bold;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceContent .plice1 span {
+  font-size: 40px;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceContent .plice2 {
+  text-align: center;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceContent .plice2 span {
+  font-size: 28px;
+}
+
+.container6 .contents section .planList .planBox .plan .pliceContent .plice3 {
+  text-align: center;
+  background-color: #ee275b;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.container6 .contents section .caution {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container6 .contents section img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.container6 .contents section .lashic-sleep {
+  display: block;
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container6 .contents section .lashic-call {
+  display: block;
+  width: 93%;
+  margin: 0 auto;
 }
