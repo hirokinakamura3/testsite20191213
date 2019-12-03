@@ -2,6 +2,8 @@
     width: 100%;
     background-color: #a6a6a6;
     height: auto;
+    -webkit-clip-path: polygon(0% 20%, 10% 50%, 60% 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 97%, 0 75%);;
     @at-root {
         &__contents {
             width: 100%;

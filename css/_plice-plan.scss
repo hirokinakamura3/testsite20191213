@@ -79,11 +79,12 @@
             color: #fa7800;
             font-weight: bold;
             span {
-                font-size: 40px;
+                font-size: 55px;
             }
         }
         &__txt2 {
             text-align: center;
+            font-weight: bold;
             span {
                 font-size: 28px;
             }
@@ -98,6 +99,10 @@
             font-size: 24px;
             color: #ffffff;
             padding: 10px 0;
+            box-shadow: 0px 4px 0px 0px #b2095b;
+            &:hover{
+                cursor: pointer;
+            }
         }
         &__caution {
             width: 90%;

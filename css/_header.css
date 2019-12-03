@@ -40,7 +40,8 @@
 }
 
 .Header__itemInner2--red {
-  background-color: red;
+  background-color: #ee275b;
+  color: #ffffff;
 }
 
 .Header__msg {

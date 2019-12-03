@@ -41,7 +41,8 @@
 }
 
 .Header__itemInner2--red {
-  background-color: red;
+  background-color: #ee275b;
+  color: #ffffff;
 }
 
 .Header__msg {
@@ -145,6 +146,8 @@
   width: 100%;
   background-color: #a6a6a6;
   height: auto;
+  -webkit-clip-path: polygon(0% 20%, 10% 50%, 60% 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 97%, 0 75%);
 }
 
 .Problem__contents {
@@ -175,6 +178,10 @@
   padding-bottom: 80px;
   background-color: #f2f2f2;
   position: relative;
+  margin-top: -130px;
+  margin-bottom: 30px;
+  z-index: -100;
+  padding-top: 100px;
 }
 
 .LashicRoom__contents {
@@ -284,7 +291,7 @@
   height: auto;
   margin: 0 auto;
   background-color: #ffffff;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -374,7 +381,9 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-color: #5087bb;
+  background: -moz-linear-gradient(top, #009fd2, #00d0cd);
+  background: -webkit-linear-gradient(top, #009fd2, #00d0cd);
+  background: linear-gradient(to bottom, #009fd2, #00d0cd);
 }
 
 .Label1__contents {
@@ -382,7 +391,9 @@
   max-width: 960px;
   margin: 0 auto;
   height: auto;
-  background-color: #5087bb;
+  background: -moz-linear-gradient(top, #009fd2, #00d0cd);
+  background: -webkit-linear-gradient(top, #009fd2, #00d0cd);
+  background: linear-gradient(to bottom, #009fd2, #00d0cd);
 }
 
 .Label1__txt {
@@ -489,11 +500,12 @@
 }
 
 .PlicePlan__txt1 span {
-  font-size: 40px;
+  font-size: 55px;
 }
 
 .PlicePlan__txt2 {
   text-align: center;
+  font-weight: bold;
 }
 
 .PlicePlan__txt2 span {
@@ -510,6 +522,11 @@
   font-size: 24px;
   color: #ffffff;
   padding: 10px 0;
+  box-shadow: 0px 4px 0px 0px #b2095b;
+}
+
+.PlicePlan__txt3:hover {
+  cursor: pointer;
 }
 
 .PlicePlan__caution {
@@ -537,4 +554,76 @@
   display: block;
   width: 93%;
   margin: 0 auto;
+}
+
+.Application {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Application__contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  padding: 40px;
+}
+
+.Application__box {
+  border: 1px solid #00a0b9;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 15px 0px;
+}
+
+.Application__box:nth-of-type(4) {
+  margin-bottom: 10px;
+}
+
+.Application__innerTxt {
+  text-align: center;
+  font-size: 24px;
+}
+
+.Application__innerTxt span {
+  color: #00a0b9;
+  margin-right: 20px;
+}
+
+.Application__innerTxt input {
+  margin-right: 20px;
+}
+
+.Application__price {
+  text-align: center;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 7%;
+}
+
+.Application__monthPrice {
+  font-size: 32px;
+}
+
+.Application__caution {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.Application__btn {
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ee275b;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 0;
+  font-size: 28px;
+  box-shadow: 0px 4px 0px 0px #b2095b;
 }

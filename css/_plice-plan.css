@@ -94,11 +94,12 @@
 }
 
 .PlicePlan__txt1 span {
-  font-size: 40px;
+  font-size: 55px;
 }
 
 .PlicePlan__txt2 {
   text-align: center;
+  font-weight: bold;
 }
 
 .PlicePlan__txt2 span {
@@ -115,6 +116,11 @@
   font-size: 24px;
   color: #ffffff;
   padding: 10px 0;
+  box-shadow: 0px 4px 0px 0px #b2095b;
+}
+
+.PlicePlan__txt3:hover {
+  cursor: pointer;
 }
 
 .PlicePlan__caution {
