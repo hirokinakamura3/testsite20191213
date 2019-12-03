@@ -1,0 +1,111 @@
+@charset "UTF-8";
+.LashicRoom {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.LashicRoom__contents {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+.LashicRoom__section {
+  padding-top: 30px;
+}
+
+.LashicRoom__ttl {
+  width: 100%;
+  margin: 0;
+}
+
+.LashicRoom__ttlInner {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.LashicRoom__mainImgs {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.LashicRoom__mainImg {
+  width: 40%;
+}
+
+.LashicRoom__txt1 {
+  margin: 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.LashicRoom__txt1:before {
+  content: "ï¼‹";
+  background-color: #fa7800;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.LashicRoom__msg {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.LashicRoom__msgInner {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.LashicRoom__txt2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.LashicRoom__txt2 span {
+  color: #fa7800;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.LashicRoom__btn {
+  display: block;
+  background-color: #ffffff;
+  color: #fa7800;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #fa7800;
+}
+
+.LashicRoom__triangle {
+  position: absolute;
+  bottom: -4.5%;
+  width: 100%;
+}
+
+.LashicRoom__triangle p {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #7bcedb;
+  font-size: 50px;
+}

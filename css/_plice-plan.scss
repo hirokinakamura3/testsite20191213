@@ -1,0 +1,126 @@
+.PlicePlan {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+        }
+        &__firstBox {
+            display: flex;
+            flex-flow: column;
+            border: 1px solid #00a0b9;
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__firstBoxLabel {
+            text-align: center;
+            background-color: #00a0b9;
+            color: #ffffff;
+            font-size: 28px;
+            padding: 10px 0;
+        }
+        &__firstBoxForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        &__firstBoxFormInput {
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        &__firstBoxFormTxt {
+            background-color: #fff;
+            color: #000000;
+            font-size: 24px;
+        }
+        &__planList {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__planBox {
+            display: flex;
+            flex-flow: column;
+            width: 32%;
+        }
+        &__planBoxPlus {
+            text-align: center;
+            font-size: 50px;
+        }
+        &__plan {
+            display: flex;
+            flex-flow: column;
+            border: 1px solid #00a0b9;
+            margin-top: 20px;
+        }
+        &__pliceLabel {
+            text-align: center;
+            background-color: #00a0b9;
+            color: #ffffff;
+            font-size: 28px;
+            padding: 10px 0;
+        }
+        &__pliceContent {
+            display: flex;
+            flex-flow: column;
+            padding: 20px;
+        }
+        &__txt1 {
+            text-align: center;
+            color: #fa7800;
+            font-weight: bold;
+            span {
+                font-size: 40px;
+            }
+        }
+        &__txt2 {
+            text-align: center;
+            span {
+                font-size: 28px;
+            }
+        }
+        &__txt3 {
+            text-align: center;
+            background-color: #ee275b;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 24px;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+        &__caution {
+            width: 90%;
+            text-align: left;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__more {
+            display: block;
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        &__sleepImg {
+            display: block;
+            width: 93%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__callImg {
+            display: block;
+            width: 93%;
+            margin: 0 auto;
+        }
+    }
+}

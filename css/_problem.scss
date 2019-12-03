@@ -1,0 +1,24 @@
+.Problem {
+    width: 100%;
+    background-color: #a6a6a6;
+    height: auto;
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #a6a6a6;
+        }
+        &__section {
+            padding-top: 30px;
+        }
+        &__imgBox {
+            background-color: #a6a6a6;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

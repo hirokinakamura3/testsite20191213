@@ -1,0 +1,97 @@
+.LashicRoom {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-color: #f2f2f2;
+    position: relative;
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #f2f2f2;
+        }
+        &__section {
+            padding-top: 30px;
+        }
+        &__ttl {
+            width: 100%;
+            margin: 0;
+        }
+        &__ttlInner {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__mainImgs {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            align-items: center;
+        }
+        &__mainImg {
+            width: 40%;
+        }
+        &__txt1 {
+            margin: 0 auto;
+            margin-right: 10px;
+            margin-left: 10px;
+            &:before {
+                content: "ï¼‹";
+                background-color: #fa7800;
+                border-radius: 50%;
+                color: #ffffff;
+                font-size: 30px;
+                margin: 0 auto;
+            }
+        }
+        &__msg {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        &__msgInner {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__txt2 {
+            text-align: center;
+            font-size: 24px;
+            span {
+                color: #fa7800;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        &__btn {
+            display: block;
+            background-color: #ffffff;
+            color: #fa7800;
+            width: 75%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 10px 0;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            border: 1px solid #fa7800;
+        }
+    }
+    &__triangle {
+        position: absolute;
+        bottom: -4.5%;
+        width: 100%;
+        p {
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            color: #7bcedb;
+            font-size: 50px;
+        }
+    }
+}

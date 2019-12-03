@@ -1,0 +1,12 @@
+.Slider1 {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #5087bb;
+    @at-root {
+        &__img {
+            width: 100%;
+        }
+    }
+}
