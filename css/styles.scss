@@ -1,17 +1,19 @@
-header {
+.Header {
     width: 100%;
     height: 140px;
     background-color: #ffffff;
-    ul {
-        width: 100%;
-        max-width: 960px;
-        height: 90px;
-        display: flex;
-        align-items: center;
-        flex-flow: row;
-        margin: 0 auto;
-        padding: 0;
-        li {
+    @at-root {
+        &__nav {
+            width: 100%;
+            max-width: 960px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            flex-flow: row;
+            margin: 0 auto;
+            padding: 0;
+        }
+        &__item {
             width: 200px;
             margin-right: 10px;
             list-style: none;
@@ -19,31 +21,32 @@ header {
                 width: 120px;
                 margin-right: auto;
             }
-            a {
-                display: block;
-                text-align: center;
-                background-color: #ccc;
-                width: 100%;
-                padding: 10px 0px;
-                border-radius: 30px;
-            }
-            .buyBtn {
-                background-color: #ee275b;
-                color: #ffffff;
-            }
-            img {
-                width: 100%;
+        }
+        &__itemInner1 {
+            width: 100%;
+        }
+        &__itemInner2 {
+            display: block;
+            text-align: center;
+            background-color: #ccc;
+            width: 100%;
+            padding: 10px 0px;
+            border-radius: 30px;
+            $this: &;
+            &--red {
+                @extend #{$this};
+                background-color: red;
             }
         }
-    }
-    .header__content {
-        width: 100%;
-        max-width: 960px;
-        height: 50px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        p {
+        &__msg {
+            width: 100%;
+            max-width: 960px;
+            height: 50px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        &__msgInner {
             display: block;
             width: 100%;
             margin: 0 auto;
@@ -57,175 +60,183 @@ header {
         }
     }
 }
-.slider1 {
+.Slider1 {
     width: 100%;
     max-width: 1200px;
-    height: 475px;
+    height: auto;
     margin: 0 auto;
     background-color: #5087bb;
-    img {
-        width: 100%;
+    @at-root {
+        &__img {
+            width: 100%;
+        }
     }
 }
-.container1 {
+.Catch {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-bottom: 40px;
     background-color: #ffffff;
-    .contents {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        height: auto;
-        background-color: #ffffff;
-        section {
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #ffffff;
+        }
+        &__section {
             padding-top: 30px;
-            h1 {
-                width: 100%;
-                margin: 0;
-                img {
-                    width: 80%;
-                    display: block;
-                    margin: 0 auto;
-                }
+        }
+        &__Catch_ttl {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__ttlInner {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__txt {
+            text-align: center;
+            font-size: 24px;
+            span {
+                color: #fa7800;
+                font-size: 30px;
+                font-weight: bold;
             }
-            p {
-                text-align: center;
-                font-size: 24px;
-                span {
-                    color: #fa7800;
-                    font-size: 30px;
-                    font-weight: bold;
-                }
-            }
-            a {
-                display: block;
-                background-color: #e6e6e6;
-                color: #808080;
-                width: 75%;
-                text-align: center;
-                margin: 0 auto;
-                margin-top: 20px;
-                padding: 10px 0;
-                font-size: 20px;
-                text-decoration: none;
-                border-radius: 30px;
-                &:nth-of-type(2) {
-                    margin-top: 20px;
-                    background-color: #ffffff;
-                    border: 1px solid #fa7800;
-                    color: #fa7800;
-                }
+        }
+        &__btn {
+            display: block;
+            background-color: #e6e6e6;
+            color: #808080;
+            width: 75%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 0;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            $this: &;
+            &--orange {
+                @extend #{$this};
+                color: #fa7800;
+                background-color: #fff;
+                border: 1px solid #fa7800;
             }
         }
     }
 }
-.container2 {
+.Problem {
     width: 100%;
     background-color: #a6a6a6;
     height: auto;
-    .contents {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        height: auto;
-        background-color: #a6a6a6;
-        section {
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #a6a6a6;
+        }
+        &__section {
             padding-top: 30px;
-            .obachan {
-                background-color: #a6a6a6;
-                img {
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
+        }
+        &__imgBox {
+            background-color: #a6a6a6;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
         }
     }
 }
-.container3 {
+.LashicRoom {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-bottom: 80px;
     background-color: #f2f2f2;
     position: relative;
-    .contents {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        height: auto;
-        background-color: #f2f2f2;
-        section {
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #f2f2f2;
+        }
+        &__section {
             padding-top: 30px;
-            h1 {
-                width: 100%;
-                margin: 0;
-                img {
-                    width: 50%;
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-            .lashic-room {
-                display: flex;
-                justify-content: center;
-                margin-top: 40px;
-                align-items: center;
-                img {
-                    width: 40%;
-                }
-                p {
-                    margin: 0 auto;
-                    margin-right: 10px;
-                    margin-left: 10px;
-                    &:before {
-                        content: "＋";
-                        background-color: #fa7800;
-                        border-radius: 50%;
-                        color: #ffffff;
-                    }
-                }
-            }
-            h2 {
-                width: 100%;
+        }
+        &__ttl {
+            width: 100%;
+            margin: 0;
+        }
+        &__ttlInner {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__mainImgs {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            align-items: center;
+        }
+        &__mainImg {
+            width: 40%;
+        }
+        &__txt1 {
+            margin: 0 auto;
+            margin-right: 10px;
+            margin-left: 10px;
+            &:before {
+                content: "＋";
+                background-color: #fa7800;
+                border-radius: 50%;
+                color: #ffffff;
+                font-size: 30px;
                 margin: 0 auto;
-                margin-top: 40px;
-                img {
-                    width: 60%;
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-            p {
-                text-align: center;
-                font-size: 24px;
-                span {
-                    color: #fa7800;
-                    font-size: 30px;
-                    font-weight: bold;
-                }
-            }
-            .text1 {
-                margin-top: 20px;
-            }
-            a {
-                display: block;
-                background-color: #ffffff;
-                color: #fa7800;
-                width: 75%;
-                text-align: center;
-                margin: 0 auto;
-                margin-top: 40px;
-                padding: 10px 0;
-                font-size: 20px;
-                text-decoration: none;
-                border-radius: 30px;
-                border: 1px solid #fa7800;
             }
         }
+        &__msg {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        &__msgInner {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__txt2 {
+            text-align: center;
+            font-size: 24px;
+            span {
+                color: #fa7800;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        &__btn {
+            display: block;
+            background-color: #ffffff;
+            color: #fa7800;
+            width: 75%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 10px 0;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            border: 1px solid #fa7800;
+        }
     }
-    .triangle {
+    &__triangle {
         position: absolute;
         bottom: -4.5%;
         width: 100%;
@@ -240,83 +251,83 @@ header {
     }
 }
 
-.container4 {
+.BestPlice {
     width: 100%;
     height: auto;
     margin: 0 auto;
     background-color: #ffffff;
     padding-top: 80px;
     padding-bottom: 40px;
-    .contents {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        height: auto;
-        background-color: #ffffff;
-        section {
+    @at-root {
+        &__contents {
             width: 100%;
-            h1 {
-                width: 100%;
-                margin: 0 auto;
-                img {
-                    width: 40%;
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-            h2 {
-                width: 100%;
-                margin: 0 auto;
-                padding-bottom: 30px;
-                img {
-                    width: 55%;
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-            .plicePlan {
-                text-align: center;
-                font-size: 26px;
-                border: 2px solid #00a0b9;
-                width: 75%;
-                margin: 0 auto;
-                margin-bottom: 40px;
-                padding: 10px;
-                color: #00a0b9;
-            }
-            .pricelist {
-                display: flex;
-                justify-content: space-between;
-                width: 75%;
-                margin: 0 auto;
-                align-items: center;
-                img {
-                    display: block;
-                    width: 45%;
-                }
-                .plus {
-                    font-size: 30px;
-                    font-weight: 900;
-                    border: none;
-                    margin-bottom: 0;
-                    color: #000000;
-                }
-            }
-            .caution {
-                display: block;
-                width: 75%;
-                margin: 0 auto;
-                margin-top: 20px;
-            }
-            .triangle {
-                display: block;
-                margin-top: 40px;
-                p {
-                    text-align: center;
-                    color: #7bcedb;
-                    font-size: 50px;
-                }
-            }
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #ffffff;
+        }
+        &__section {
+            width: 100%;
+        }
+        &__ttl {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__ttlInner {
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__ttl2 {
+            width: 100%;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        &__ttl2Inner {
+            width: 55%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__plan {
+            text-align: center;
+            font-size: 26px;
+            border: 2px solid #00a0b9;
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            padding: 10px;
+            color: #00a0b9;
+        }
+        &__priceList {
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            margin: 0 auto;
+            align-items: center;
+        }
+        &__priceImg {
+            display: block;
+            width: 45%;
+        }
+        &__plus {
+            font-size: 30px;
+            font-weight: 900;
+            border: none;
+            margin-bottom: 0;
+            color: #000000;
+        }
+        &__caution {
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__triangle {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            color: #7bcedb;
+            font-size: 50px;
         }
     }
 }
@@ -436,36 +447,34 @@ header {
                                 font-size: 24px;
                                 color: #ffffff;
                                 padding: 10px 0;
-                                
                             }
                         }
                     }
                 }
             }
-            .caution{
+            .caution {
                 width: 90%;
-                text-align: left; 
+                text-align: left;
                 margin: 0 auto;
                 margin-top: 20px;
             }
-            img{
+            img {
                 display: block;
                 width: 40%;
                 margin: 0 auto;
                 margin-top: 40px;
             }
-            .lashic-sleep{
+            .lashic-sleep {
                 display: block;
                 width: 93%;
                 margin: 0 auto;
                 margin-top: 20px;
             }
-            .lashic-call{
+            .lashic-call {
                 display: block;
                 width: 93%;
                 margin: 0 auto;
             }
-
         }
     }
 }

@@ -1,11 +1,11 @@
 @charset "UTF-8";
-header {
+.Header {
   width: 100%;
   height: 140px;
   background-color: #ffffff;
 }
 
-header ul {
+.Header__nav {
   width: 100%;
   max-width: 960px;
   height: 90px;
@@ -16,18 +16,22 @@ header ul {
   padding: 0;
 }
 
-header ul li {
+.Header__item {
   width: 200px;
   margin-right: 10px;
   list-style: none;
 }
 
-header ul li:nth-child(1) {
+.Header__item:nth-child(1) {
   width: 120px;
   margin-right: auto;
 }
 
-header ul li a {
+.Header__itemInner1 {
+  width: 100%;
+}
+
+.Header__itemInner2, .Header__itemInner2--red {
   display: block;
   text-align: center;
   background-color: #ccc;
@@ -36,16 +40,11 @@ header ul li a {
   border-radius: 30px;
 }
 
-header ul li .buyBtn {
-  background-color: #ee275b;
-  color: #ffffff;
+.Header__itemInner2--red {
+  background-color: red;
 }
 
-header ul li img {
-  width: 100%;
-}
-
-header .header__content {
+.Header__msg {
   width: 100%;
   max-width: 960px;
   height: 50px;
@@ -54,7 +53,7 @@ header .header__content {
   align-items: center;
 }
 
-header .header__content p {
+.Header__msgInner {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -64,23 +63,23 @@ header .header__content p {
   font-size: 24px;
 }
 
-header .header__content p br {
+.Header__msgInner br {
   display: none;
 }
 
-.slider1 {
+.Slider1 {
   width: 100%;
   max-width: 1200px;
-  height: 475px;
+  height: auto;
   margin: 0 auto;
   background-color: #5087bb;
 }
 
-.slider1 img {
+.Slider1__img {
   width: 100%;
 }
 
-.container1 {
+.Catch {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -88,7 +87,7 @@ header .header__content p br {
   background-color: #ffffff;
 }
 
-.container1 .contents {
+.Catch__contents {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -96,33 +95,33 @@ header .header__content p br {
   background-color: #ffffff;
 }
 
-.container1 .contents section {
+.Catch__section {
   padding-top: 30px;
 }
 
-.container1 .contents section h1 {
+.Catch__Catch_ttl {
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 
-.container1 .contents section h1 img {
+.Catch__ttlInner {
   width: 80%;
   display: block;
   margin: 0 auto;
 }
 
-.container1 .contents section p {
+.Catch__txt {
   text-align: center;
   font-size: 24px;
 }
 
-.container1 .contents section p span {
+.Catch__txt span {
   color: #fa7800;
   font-size: 30px;
   font-weight: bold;
 }
 
-.container1 .contents section a {
+.Catch__btn, .Catch__btn--orange {
   display: block;
   background-color: #e6e6e6;
   color: #808080;
@@ -136,20 +135,19 @@ header .header__content p br {
   border-radius: 30px;
 }
 
-.container1 .contents section a:nth-of-type(2) {
-  margin-top: 20px;
-  background-color: #ffffff;
-  border: 1px solid #fa7800;
+.Catch__btn--orange {
   color: #fa7800;
+  background-color: #fff;
+  border: 1px solid #fa7800;
 }
 
-.container2 {
+.Problem {
   width: 100%;
   background-color: #a6a6a6;
   height: auto;
 }
 
-.container2 .contents {
+.Problem__contents {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -157,20 +155,20 @@ header .header__content p br {
   background-color: #a6a6a6;
 }
 
-.container2 .contents section {
+.Problem__section {
   padding-top: 30px;
 }
 
-.container2 .contents section .obachan {
+.Problem__imgBox {
   background-color: #a6a6a6;
 }
 
-.container2 .contents section .obachan img {
+.Problem__img {
   display: block;
   margin: 0 auto;
 }
 
-.container3 {
+.LashicRoom {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -179,7 +177,7 @@ header .header__content p br {
   position: relative;
 }
 
-.container3 .contents {
+.LashicRoom__contents {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -187,73 +185,71 @@ header .header__content p br {
   background-color: #f2f2f2;
 }
 
-.container3 .contents section {
+.LashicRoom__section {
   padding-top: 30px;
 }
 
-.container3 .contents section h1 {
+.LashicRoom__ttl {
   width: 100%;
   margin: 0;
 }
 
-.container3 .contents section h1 img {
+.LashicRoom__ttlInner {
   width: 50%;
   display: block;
   margin: 0 auto;
 }
 
-.container3 .contents section .lashic-room {
+.LashicRoom__mainImgs {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   align-items: center;
 }
 
-.container3 .contents section .lashic-room img {
+.LashicRoom__mainImg {
   width: 40%;
 }
 
-.container3 .contents section .lashic-room p {
+.LashicRoom__txt1 {
   margin: 0 auto;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.container3 .contents section .lashic-room p:before {
+.LashicRoom__txt1:before {
   content: "＋";
   background-color: #fa7800;
   border-radius: 50%;
   color: #ffffff;
+  font-size: 30px;
+  margin: 0 auto;
 }
 
-.container3 .contents section h2 {
+.LashicRoom__msg {
   width: 100%;
   margin: 0 auto;
   margin-top: 40px;
 }
 
-.container3 .contents section h2 img {
+.LashicRoom__msgInner {
   width: 60%;
   display: block;
   margin: 0 auto;
 }
 
-.container3 .contents section p {
+.LashicRoom__txt2 {
   text-align: center;
   font-size: 24px;
 }
 
-.container3 .contents section p span {
+.LashicRoom__txt2 span {
   color: #fa7800;
   font-size: 30px;
   font-weight: bold;
 }
 
-.container3 .contents section .text1 {
-  margin-top: 20px;
-}
-
-.container3 .contents section a {
+.LashicRoom__btn {
   display: block;
   background-color: #ffffff;
   color: #fa7800;
@@ -268,13 +264,13 @@ header .header__content p br {
   border: 1px solid #fa7800;
 }
 
-.container3 .triangle {
+.LashicRoom__triangle {
   position: absolute;
   bottom: -4.5%;
   width: 100%;
 }
 
-.container3 .triangle p {
+.LashicRoom__triangle p {
   display: block;
   text-align: center;
   width: 100%;
@@ -283,7 +279,7 @@ header .header__content p br {
   font-size: 50px;
 }
 
-.container4 {
+.BestPlice {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -292,7 +288,7 @@ header .header__content p br {
   padding-bottom: 40px;
 }
 
-.container4 .contents {
+.BestPlice__contents {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -300,34 +296,34 @@ header .header__content p br {
   background-color: #ffffff;
 }
 
-.container4 .contents section {
+.BestPlice__section {
   width: 100%;
 }
 
-.container4 .contents section h1 {
+.BestPlice__ttl {
   width: 100%;
   margin: 0 auto;
 }
 
-.container4 .contents section h1 img {
+.BestPlice__ttlInner {
   width: 40%;
   display: block;
   margin: 0 auto;
 }
 
-.container4 .contents section h2 {
+.BestPlice__ttl2 {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding-bottom: 30px;
 }
 
-.container4 .contents section h2 img {
+.BestPlice__ttl2Inner {
   width: 55%;
   display: block;
   margin: 0 auto;
 }
 
-.container4 .contents section .plicePlan {
+.BestPlice__plan {
   text-align: center;
   font-size: 26px;
   border: 2px solid #00a0b9;
@@ -338,7 +334,7 @@ header .header__content p br {
   color: #00a0b9;
 }
 
-.container4 .contents section .pricelist {
+.BestPlice__priceList {
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -346,12 +342,12 @@ header .header__content p br {
   align-items: center;
 }
 
-.container4 .contents section .pricelist img {
+.BestPlice__priceImg {
   display: block;
   width: 45%;
 }
 
-.container4 .contents section .pricelist .plus {
+.BestPlice__plus {
   font-size: 30px;
   font-weight: 900;
   border: none;
@@ -359,19 +355,16 @@ header .header__content p br {
   color: #000000;
 }
 
-.container4 .contents section .caution {
+.BestPlice__caution {
   display: block;
   width: 75%;
   margin: 0 auto;
   margin-top: 20px;
 }
 
-.container4 .contents section .triangle {
+.BestPlice__triangle {
   display: block;
   margin-top: 40px;
-}
-
-.container4 .contents section .triangle p {
   text-align: center;
   color: #7bcedb;
   font-size: 50px;

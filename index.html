@@ -31,84 +31,90 @@
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li>
-                <img src="./images/logo.png" alt="lashicロゴ">
+    <header class="Header">
+        <ul class="Header__nav">
+            <li class="Header__item">
+                <img class="Header__itemInner1" src="./images/logo.png" alt="lashicロゴ">
             </li>
-            <li>
-                <a>資料請求</a>
+            <li class="Header__item">
+                <a class="Header__itemInner2">資料請求</a>
             </li>
-            <li>
-                <a class="buyBtn">購入する</a>
+            <li class="Header__item">
+                <a class="Header__itemInner2--red">購入する</a>
             </li>
         </ul>
-        <div class="header__content">
-            <p>介護施設を経営する<br class="sp_br">インフィックグループが開発・運営</p>
+        <div class="Header__msg">
+            <p class="Header__msgInner">介護施設を経営する<br class="sp_br">インフィックグループが開発・運営</p>
         </div>
     </header>
-    <div class="slider1">
-        <img src="./images/hero1.jpg" alt="">
+
+    <div class="Slider1">
+        <img class="Slider1__img" src="./images/hero1.jpg" alt="">
     </div>
-    <div class="container1">
-        <div class="contents">
-            <section>
-                <h1><img src="./images/h1.png" alt=""></h1>
-                <p>離れていても<span>親の異変</span>を確実に<span>検知</span></p>
-                <p>
+
+    <div class="Catch">
+        <div class="Catch__contents">
+            <section class="Catch__section">
+                <h1 class="Catch__ttl"><img class="Catch__ttlInner" src="./images/h1.png" alt=""></h1>
+                <p class="Catch__txt">離れていても<span>親の異変</span>を確実に<span>検知</span></p>
+                <p class="Catch__txt">
                     <span>AI</span>と<span>最新センサー</span>で<br>
                     <span>異変の予兆</span>から<span>現在の様子</span>まで<br>
                     タイムリーに<span>お伝え</span>します!
                 </p>
-                <a href="">介護施設運営の方はこちら</a>
-                <a href="">料金詳細を見る</a>
+                <a class="Catch__btn" href="">介護施設運営の方はこちら</a>
+                <a class="Catch__btn--orange" href="">料金詳細を見る</a>
             </section>
         </div>
     </div>
-    <div class="container2">
-        <div class="contents">
-            <section class="recomend">
-                <div class="obachan">
-                    <img src="./images/obachan.png" alt="">
+
+    <div class="Problem">
+        <div class="Problem__contents">
+            <section class="Problem__section">
+                <div class="Problem__imgBox">
+                    <img class="Problem__img" src="./images/obachan.png" alt="">
                 </div>
             </section>
         </div>
     </div>
-    <div class="container3">
-        <div class="contents">
-            <section class="recomend">
-                <h1><img src="./images/lashic_room.png" alt=""></h1>
-                <div class="lashic-room">
-                    <img src="./images/lashic_room_point1.png" alt="">
-                    <p><br>しかも</p>
-                    <img src="./images/lashic_room_point2.png" alt="">
+
+    <div class="LashicRoom">
+        <div class="LashicRoom__contents">
+            <section class="LashicRoom__section">
+                <h1 class="LashicRoom__ttl"><img class="LashicRoom__ttlInner" src="./images/lashic_room.png" alt="">
+                </h1>
+                <div class="LashicRoom__mainImgs">
+                    <img class="LashicRoom__mainImg" src="./images/lashic_room_point1.png" alt="">
+                    <p class="LashicRoom__txt1"><br>しかも</p>
+                    <img class="LashicRoom__mainImg" src="./images/lashic_room_point2.png" alt="">
                 </div>
-                <h2><img src="./images/container3_title.png" alt=""></h2>
-                <p class="text1">Wi-Fiがあれば、<span>簡単・お手軽にスタート</span>できます。</p>
-                <p>Wi-Fiがない場合は<span>通信端末レンタル付プラン</span>も！</p>
-                <a href="">更に詳細な機能説明を見る</a>
+                <h2 class="LashicRoom__msg"><img class="LashicRoom__msgInner" src="./images/container3_title.png"
+                        alt=""></h2>
+                <p class="LashicRoom__txt2">Wi-Fiがあれば、<span>簡単・お手軽にスタート</span>できます。</p>
+                <p class="LashicRoom__txt2">Wi-Fiがない場合は<span>通信端末レンタル付プラン</span>も！</p>
+                <a class="LashicRoom__btn" href="">更に詳細な機能説明を見る</a>
             </section>
         </div>
-        <div class="triangle">
+        <div class="LashicRoom__triangle">
             <p>▼</p>
         </div>
     </div>
 
-    <div class="container4">
-        <div class="contents">
-            <section>
-                <h1><img src="./images/container4_title.png" alt=""></h1>
-                <h2><img src="./images/container4_title2.png" alt=""></h2>
-                <p class="plicePlan">料金プラン</p>
-                <div class="pricelist">
-                    <img src="./images/container4_price1.png" alt="">
-                    <p class="plus">&#x271a;</p>
-                    <img src="./images/container4_price2.png" alt="">
+    <div class="BestPlice">
+        <div class="BestPlice__contents">
+            <section class="BestPlice__section">
+                <h1 class="BestPlice__ttl"><img class="BestPlice__ttlInner" src="./images/container4_title.png" alt="">
+                </h1>
+                <h2 class="BestPlice__ttl2"><img class="BestPlice__ttl2Inner" src="./images/container4_title2.png"
+                        alt=""></h2>
+                <p class="BestPlice__plan">料金プラン</p>
+                <div class="BestPlice__priceList">
+                    <img class="BestPlice__priceImg" src="./images/container4_price1.png" alt="">
+                    <p class="BestPlice__plus">&#x271a;</p>
+                    <img class="BestPlice__priceImg" src="./images/container4_price2.png" alt="">
                 </div>
-                <p class="caution">※記載金額には別途消費税を含みます</p>
-                <div class="triangle">
-                    <p>▼</p>
-                </div>
+                <p class="BestPlice__caution">※記載金額には別途消費税を含みます</p>
+                <p class="BestPlice__triangle">▼</p>
             </section>
         </div>
     </div>
