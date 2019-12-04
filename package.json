@@ -1,0 +1,29 @@
+{
+  "name": "lashic-lp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/littlejazzbass/lashic-lp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/littlejazzbass/lashic-lp/issues"
+  },
+  "homepage": "https://gitlab.com/littlejazzbass/lashic-lp#readme",
+  "dependencies": {
+    "stylelint": "^12.0.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.13.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
