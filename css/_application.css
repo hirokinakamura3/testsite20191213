@@ -10,6 +10,7 @@
   margin: 0 auto;
   height: auto;
   padding: 40px;
+  padding-bottom: 80px;
 }
 
 .Application__box {
@@ -18,7 +19,7 @@
   border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 15px 0px;
+  padding: 18px 0px;
 }
 
 .Application__box:nth-of-type(4) {
