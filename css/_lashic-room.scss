@@ -40,13 +40,14 @@
             margin: 0 auto;
             margin-right: 10px;
             margin-left: 10px;
-            &:before {
-                content: "ï¼‹";
+            span {
+                display: block;
+                text-align: center;
                 background-color: #fa7800;
+                margin-bottom: 5px;
+                padding: 10px;
                 border-radius: 50%;
                 color: #ffffff;
-                font-size: 30px;
-                margin: 0 auto;
             }
         }
         &__msg {

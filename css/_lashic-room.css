@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .LashicRoom {
   width: 100%;
   height: auto;
@@ -50,13 +49,14 @@
   margin-left: 10px;
 }
 
-.LashicRoom__txt1:before {
-  content: "ï¼‹";
+.LashicRoom__txt1 span {
+  display: block;
+  text-align: center;
   background-color: #fa7800;
+  margin-bottom: 5px;
+  padding: 10px;
   border-radius: 50%;
   color: #ffffff;
-  font-size: 30px;
-  margin: 0 auto;
 }
 
 .LashicRoom__msg {
