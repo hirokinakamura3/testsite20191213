@@ -1,7 +1,13 @@
 .Problem {
   width: 100%;
-  background-color: #a6a6a6;
+  background-color: #f2f2f2;
   height: auto;
+}
+
+.Problem__bg {
+  width: 100%;
+  height: auto;
+  background-color: #a6a6a6;
   -webkit-clip-path: polygon(0% 20%, 10% 50%, 60% 90%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 97%, 0 75%);
 }

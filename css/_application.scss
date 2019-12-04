@@ -1,0 +1,63 @@
+.Application {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    @at-root {
+        &__contents {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: auto;
+            padding: 40px;
+        }
+        &__box {
+            border: 1px solid #00a0b9;
+            width: 80%;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            padding: 15px 0px;
+            &:nth-of-type(4) {
+                margin-bottom: 10px;
+            }
+        }
+        &__innerTxt {
+            text-align: center;
+            font-size: 24px;
+            span {
+                color: #00a0b9;
+                margin-right: 20px;
+            }
+            input {
+                margin-right: 20px;
+            }
+        }
+        &__price {
+            text-align: center;
+            font-size: 24px;
+            text-align: left;
+            padding-left: 7%;
+        }
+        &__monthPrice {
+            font-size: 32px;
+        }
+        &__caution {
+            width: 80%;
+            text-align: left;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        &__btn {
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ee275b;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 20px 0;
+            font-size: 28px;
+            box-shadow: 0px 4px 0px 0px #b2095b;
+        }
+    }
+}
