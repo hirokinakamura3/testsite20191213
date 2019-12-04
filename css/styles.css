@@ -637,3 +637,34 @@
   font-size: 28px;
   box-shadow: 0px 4px 0px 0px #b2095b;
 }
+
+.Media {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Media__contents {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background-color: #DB2A26;
+}
+
+.Media__txt {
+  width: 100%;
+  text-align: center;
+  line-height: 120px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.Media__box {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
