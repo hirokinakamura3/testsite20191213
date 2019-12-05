@@ -32,4 +32,17 @@ $breakpoint-mobile: 320px;
 @import "life";
 @import "parts";
 
+.swiper-container{
+    widows: 100%;
+    max-width: 1200px;
+    .swiper-wrapper{
+        width: 100%;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
 
