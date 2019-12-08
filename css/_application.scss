@@ -25,6 +25,8 @@
         &__innerTxt {
             text-align: center;
             font-size: 24px;
+            display: flex;
+            justify-content: center;
             span {
                 color: #00a0b9;
                 margin-right: 20px;
