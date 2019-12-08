@@ -1,12 +1,13 @@
-.Slider1 {
-    width: 100%;
+.swiper-container {
+    widows: 100%;
     max-width: 1200px;
-    height: auto;
-    margin: 0 auto;
-    background-color: #5087bb;
-    @at-root {
-        &__img {
+    .swiper-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        img {
             width: 100%;
+            display: block;
+            margin: 0 auto;
         }
     }
 }

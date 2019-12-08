@@ -51,10 +51,19 @@
         </div>
     </header>
 
-    <div class="Slider1">
-        <img class="Slider1__img" src="./images/hero1.jpg" alt="">
-    </div>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/hiro_01.png"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
     <div class="Catch">
         <div class="Catch__contents">
             <section class="Catch__section">
@@ -201,7 +210,10 @@
                 <p class="Application__innerTxt"><span>▼</span>1年一括支払い</p>
             </div>
             <div class="Application__box">
-                <p class="Application__innerTxt"><input type="checkbox">通信端末のレンタルも申し込む(980円/月)</p>
+                <p class="Application__innerTxt">
+                    <input type="checkbox" id="box-2">
+                    <label for="box-2">通信端末レンタル申込(980円/月)</label>
+                </p>
             </div>
             <div class="Application__box">
                 <p class="Application__price">月々の金額<span class="Application__monthPrice">〇〇</span>円/月</p>
@@ -217,9 +229,9 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="images/hero1.jpg"></div>
-            <div class="swiper-slide"><img src="images/hero1.jpg"></div>
-            <div class="swiper-slide"><img src="images/hero1.jpg"></div>
+            <div class="swiper-slide"><img src="images/slider2_01.png"></div>
+            <div class="swiper-slide"><img src="images/slider2_02.png"></div>
+            <div class="swiper-slide"><img src="images/slider2_05.png"></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -259,733 +271,161 @@
     <!-- Detail start -->
 
     <div class="Detail">
-        <p class="Detail_Ttl">詳細な機能・仕様</p>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head">室内空間センサー</p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl">基本機能</dt>
-                        <dd class="Detail__boxTxt">居室内の「温度」「湿度」「照度」「運動量・動き」をモニターし、居室内のお客様が適切な環境にいらっしゃるかをモニタリングします。</dd>
+        <p class="Detail__Ttl">詳細な機能・仕様</p>
+        <div class="Detail__wrapper">
+            <div class="Detail__content">
+                <div class="Detail__headOuter">
+                    <p class="Detail__head">室内空間センサー</p>
+                </div>
+                <div class="Detail__body">
+                    <div class="Detail__imgOuter">
+                        <img src="./images/lashicroom.png" alt="">
                     </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl">主なチェック項目</dt>
-                        <dd class="Detail__boxTxt">・熱中症リスク、感染症リスクの警告</dd>
-                        <dd class="Detail__boxTxt">・起床・就寝時刻の記録</dd>
-                        <dd class="Detail__boxTxt">・一定時間以上、動作がない場合の警告</dd>
-                        <dd class="Detail__boxTxt"></dd>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl">搭載センサー</dt>
-                        <dd class="Detail__boxTxt"></dd>
+                    <div class="Detail__txtOuter">
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">基本機能</dt>
+                            <dd class="Detail__boxTxt">居室内の「温度」「湿度」「照度」「運動量・動き」をモニターし、居室内のお客様が適切な環境にいらっしゃるかをモニタリングします。
+                            </dd>
+                        </div>
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">主なチェック項目</dt>
+                            <dd class="Detail__boxTxt">・熱中症リスク、感染症リスクの警告</dd>
+                            <dd class="Detail__boxTxt">・起床・就寝時刻の記録</dd>
+                            <dd class="Detail__boxTxt">・一定時間以上、動作がない場合の警告</dd>
+                            <dd class="Detail__boxTxt">・生活リズムの崩れによる認知症初期状態の注意喚起</dd>
+                            <dd class="Detail__boxTxt">・暗闇での徘徊など異常行動の把握と警告</dd>
+                        </div>
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">搭載センサー</dt>
+                            <dd class="Detail__boxTxt">人感センサー（運動量・動き）/ 温度センサー / 湿度センサー/ 照度センサー</dd>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head">室内空間センサー</p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
+            <div class="Detail__content">
+                <div class="Detail__headOuter">
+                    <p class="Detail__head">室内空間センサー</p>
+                </div>
+                <div class="Detail__body">
+                    <div class="Detail__imgOuter">
+                        <img src="./images/lashicsleep.png" alt="">
                     </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
+                    <div class="Detail__txtOuter">
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">基本機能</dt>
+                            <dd class="Detail__boxTxt">ベッド上のお客様の状態をリアルタイムで把握、<br>マットレスの下に敷くだけの簡単設置</dd>
+                        </div>
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">主なチェック項目</dt>
+                            <dd class="Detail__boxTxt">［動作］ ベッド上の在・不在、体動</dd>
+                            <dd class="Detail__boxTxt">［バイタル］ 脈拍（※）</dd>
+                        </div>
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">開発中の機能</dt>
+                            <dd class="Detail__boxTxt">［バイタル］ 呼吸（※）</dd>
+                            <dd class="Detail__boxTxt">［姿勢］ 座位・仰臥位、左寄り・右寄り</dd>
+                            <dd class="Detail__boxTxt">［睡眠］ 睡眠・覚醒、睡眠快適度</dd>
+                        </div>
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">その他機能</dt>
+                            <dd class="Detail__boxTxt">厚みのあるマットレスでも動作可能 / 介護ベッドの背上げ、脚上げにも対応 / ビニールカバー付きで水濡れも対応 /
+                                LASHIC-room の子機として作動</dd>
+                            <p class="Detail__boxCaution">※推定値であり医療的データではありません</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
+            <div class="Detail__content">
+                <div class="Detail__headOuter">
+                    <p class="Detail__head">ナースコール</p>
+                </div>
+                <div class="Detail__body">
+                    <div class="Detail__imgOuter">
+                        <img src="./images/lashiccall.png" alt="">
                     </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
+                    <div class="Detail__txtOuter">
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">基本機能</dt>
+                            <dd class="Detail__boxTxt">・緊急通知ボタンを触るとスマホにアラートを送信</dd>
+                            <dd class="Detail__boxTxt">・通知を受けたスマホと通話が可能（LASHIC-call 側は受話操作不要、自動で通話開始）</dd>
+                            <dd class="Detail__boxTxt">・スピーカー＆マイクを内蔵のため、ハンズフリーで通話可能（転倒などで動けない場合にも有効）</dd>
+                            <dd class="Detail__boxTxt">・音量が足りない場合は外部スピーカーも接続可能</dd>
+                            <dd class="Detail__boxTxt">・スマホ側からはいつでも通話可能</dd>
+                        </div>
+                        <div class="Detail__box">
+                            <dt class="Detail__boxTtl">その他機能</dt>
+                            <dd class="Detail__boxTxt">・番号ボタンに任意のスマホを割り当て可能。通常の通話用に利用可能（画像は試作機、実機は２ボタンとなります）</dd>
+                            <dd class="Detail__boxTxt">・インターネット回線を利用するため、通話料は発生しない</dd>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Detail__content">
-            <div class="Detail__headOuter">
-                <p class="Detail__head"></p>
-            </div>
-            <div class="Detail__body">
-                <div class="Detail__imgOuter"></div>
-                <div class="Detail__txtOuter">
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
-                    </div>
-                    <div class="Detai__box">
-                        <dt class="Detail__boxttl"></dt>
-                        <dd class="Detail__boxTxt"></dd>
+
+            <!-- Block再定義 Spec start -->
+            <div class="Detail__content Spec">
+                <p class="Spec__Ttl">詳細な機能・仕様</p>
+                <div class="Spec__body">
+                    <div class="Spec__boxOuter">
+                        <p class="Spec__head">室内空間センサー　LASHIC-room（親機・gateway）</p>
+                        <div class="Spec__box">
+                            <dt class="Spec__boxTtl">外形寸法／重量</dt>
+                            <dd class="Spec__boxTxt">H14.4cm×W11.4cm×D3.0cm / 170g</dd>
+                            <dt class="Spec__boxTtl">電源／消費電力</dt>
+                            <dd class="Spec__boxTxt">AV100V　50/60Hz / 11.5W</dd>
+                            <dt class="Spec__boxTtl">外部端子</dt>
+                            <dd class="Spec__boxTxt">有線ＬＡＮ（RJ-45、100base-TX）、<br>ＵＳＢ（USB2.0 対応、LTE 通信、Wi-Fi 通信対応）</dd>
+                            <dt class="Spec__boxTtl">セキュリティ</dt>
+                            <dd class="Spec__boxTxt">インターネット接続・ＳＳＬ、子機間無線通信・128bitAES</dd>
+                            <dt class="Spec__boxTtl">付属品</dt>
+                            <dd class="Spec__boxTxt">AC アダプタ、マニュアル</dd>
+                        </div>
+                    </div>
+                    <div class="Spec__boxOuter">
+                        <p class="Spec__head">室内空間センサー　LASHIC-room（子機・room）</p>
+                        <div class="Spec__box">
+                            <dt class="Spec__boxTtl">外形寸法／重量</dt>
+                            <dd class="Spec__boxTxt">H14.4cm×W11.4cm×D3.0cm / 120g</dd>
+                            <dt class="Spec__boxTtl">電源／消費電力</dt>
+                            <dd class="Spec__boxTxt">AV100V　50/60Hz / 11.5W</dd>
+                            <dt class="Spec__boxTtl">外部端子</dt>
+                            <dd class="Spec__boxTxt">なし</dd>
+                            <dt class="Spec__boxTtl">セキュリティ</dt>
+                            <dd class="Spec__boxTxt">親機間無線通信・128bitAES</dd>
+                            <dt class="Spec__boxTtl">付属品</dt>
+                            <dd class="Spec__boxTxt">AC アダプタ、マニュアル</dd>
+                        </div>
+                    </div>
+                    <div class="Spec__boxOuter">
+                        <p class="Spec__head">睡眠センサー　LASHIC-sleep</p>
+                        <div class="Spec__box">
+                            <dt class="Spec__boxTtl">外形寸法／重量</dt>
+                            <dd class="Spec__boxTxt">H14.4cm×W11.4cm×D3.0cm /<br>本体 160g　ケーブル100g　ベッドセンサー1.6kg</dd>
+                            <dt class="Spec__boxTtl">電源／消費電力</dt>
+                            <dd class="Spec__boxTxt">AV100V　50/60Hz / 11.5W</dd>
+                            <dt class="Spec__boxTtl">外部端子</dt>
+                            <dd class="Spec__boxTxt">有線ＬＡＮ（RJ-45、100base-TX）、<br>ＵＳＢ（USB2.0 対応、LTE 通信、Wi-Fi
+                                通信対応）、<br>ベッドセンサー接続用 3.5Φステレオミニジャック</dd>
+                            <dt class="Spec__boxTtl">セキュリティ</dt>
+                            <dd class="Spec__boxTxt">インターネット接続・ＳＳＬ、子機間無線通信・128bitAES</dd>
+                            <dt class="Spec__boxTtl">付属品</dt>
+                            <dd class="Spec__boxTxt">AC アダプタ、マニュアル、オーディオケーブル、<br>ベッドセンサー</dd>
+                        </div>
+                    </div>
+                    <div class="Spec__boxOuter">
+                        <p class="Spec__head">双方向通話型 ナースコール　LASHIC-call</p>
+                        <div class="Spec__box">
+                            <dt class="Spec__boxTtl">外形寸法／重量</dt>
+                            <dd class="Spec__boxTxt">H14.4cm×W11.4cm×D3.0cm　／　200g</dd>
+                            <dt class="Spec__boxTtl">電源／消費電力</dt>
+                            <dd class="Spec__boxTxt">AV100V　50/60Hz / 11.5W</dd>
+                            <dt class="Spec__boxTtl">外部端子</dt>
+                            <dd class="Spec__boxTxt">有線ＬＡＮ（RJ-45、100base-TX）、<br>ＵＳＢ（USB2.0 対応、LTE 通信、Wi-Fi
+                                通信対応）、<br>ベッドセンサー接続用 3.5Φステレオミニジャック</dd>
+                            <dt class="Spec__boxTtl">セキュリティ</dt>
+                            <dd class="Spec__boxTxt">インターネット接続・ＳＳＬ</dd>
+                            <dt class="Spec__boxTtl">付属品</dt>
+                            <dd class="Spec__boxTxt">AC アダプタ、マニュアル</dd>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -994,8 +434,19 @@
 
     <!-- Detail end -->
 
-    <footer class="footer">
+    <footer class="Footer">
+        <div class="Footer__container">
+            <a class="Footer__link" href="">運営者からのお知らせ</a>
+            <a class="Footer__link" href="">利用規約</a>
+            <a class="Footer__link" href="">運営会社</a>
+            <a class="Footer__link" href="">プライバシーポリシー</a>
+            <a class="Footer__link" href="">Q&A</a>
+            <a class="Footer__link" href="">お問い合わせ</a>
 
+        </div>
+        <div class="Footer__copy">
+            <p>&copy;LASHIC. All Rights Reserved.</p>
+        </div>
     </footer>
     <script src="resources/assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>

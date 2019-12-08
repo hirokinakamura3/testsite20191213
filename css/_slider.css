@@ -1,11 +1,15 @@
-.Slider1 {
-  width: 100%;
+.swiper-container {
+  widows: 100%;
   max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  background-color: #5087bb;
 }
 
-.Slider1__img {
+.swiper-container .swiper-wrapper {
   width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container .swiper-wrapper img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
