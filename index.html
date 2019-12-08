@@ -51,10 +51,19 @@
         </div>
     </header>
 
-    <div class="Slider1">
-        <img class="Slider1__img" src="./images/hiro_01.png" alt="">
-    </div>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/hiro_01.png"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
     <div class="Catch">
         <div class="Catch__contents">
             <section class="Catch__section">
@@ -220,8 +229,8 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="images/slider2_05.png"></div>
-            <div class="swiper-slide"><img src="images/slider2_05.png"></div>
+            <div class="swiper-slide"><img src="images/slider2_01.png"></div>
+            <div class="swiper-slide"><img src="images/slider2_02.png"></div>
             <div class="swiper-slide"><img src="images/slider2_05.png"></div>
         </div>
         <!-- If we need pagination -->
@@ -270,7 +279,7 @@
                 </div>
                 <div class="Detail__body">
                     <div class="Detail__imgOuter">
-                        <div>hoge</div>
+                        <img src="./images/lashicroom.png" alt="">
                     </div>
                     <div class="Detail__txtOuter">
                         <div class="Detail__box">
@@ -299,7 +308,7 @@
                 </div>
                 <div class="Detail__body">
                     <div class="Detail__imgOuter">
-                        <div>hoge</div>
+                        <img src="./images/lashicsleep.png" alt="">
                     </div>
                     <div class="Detail__txtOuter">
                         <div class="Detail__box">
@@ -332,7 +341,7 @@
                 </div>
                 <div class="Detail__body">
                     <div class="Detail__imgOuter">
-                        <div>hoge</div>
+                        <img src="./images/lashiccall.png" alt="">
                     </div>
                     <div class="Detail__txtOuter">
                         <div class="Detail__box">
@@ -425,8 +434,19 @@
 
     <!-- Detail end -->
 
-    <footer class="footer">
+    <footer class="Footer">
+        <div class="Footer__container">
+            <a class="Footer__link" href="">運営者からのお知らせ</a>
+            <a class="Footer__link" href="">利用規約</a>
+            <a class="Footer__link" href="">運営会社</a>
+            <a class="Footer__link" href="">プライバシーポリシー</a>
+            <a class="Footer__link" href="">Q&A</a>
+            <a class="Footer__link" href="">お問い合わせ</a>
 
+        </div>
+        <div class="Footer__copy">
+            <p>&copy;LASHIC. All Rights Reserved.</p>
+        </div>
     </footer>
     <script src="resources/assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
