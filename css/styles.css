@@ -771,26 +771,6 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .Detail__Ttl {
-  background-color: #999999;
-}
-
-.swiper-container {
-  widows: 100%;
-  max-width: 1200px;
-}
-
-.swiper-container .swiper-wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.swiper-container .swiper-wrapper img {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-.Detail__Ttl {
   width: 100%;
   text-align: center;
   line-height: 100px;
@@ -866,4 +846,62 @@ input[type="checkbox"]:checked + label:before {
 
 .Detail__boxCaution {
   margin-top: 8px;
+}
+
+.Spec__Ttl {
+  padding-bottom: 3px;
+  font-size: 22px;
+  color: #00A0B9;
+  border-bottom: 1px solid #00A0B9;
+}
+
+.Spec__body {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+
+.Spec__boxOuter {
+  width: 440px;
+  font-size: 16px;
+}
+
+.Spec__boxOuter + .Spec__boxOuter + .Spec__boxOuter {
+  margin-top: 30px;
+}
+
+.Spec__head {
+  font-size: 18px;
+  color: #00A0B9;
+}
+
+.Spec__box {
+  margin-top: 15px;
+  border: 1px solid #E6E6E6;
+}
+
+.Spec__boxTtl {
+  padding: 9px 20px 7px;
+  background-color: #E6E6E6;
+}
+
+.Spec__boxTxt {
+  padding: 9px 20px 7px;
+}
+
+.swiper-container {
+  widows: 100%;
+  max-width: 1200px;
+}
+
+.swiper-container .swiper-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container .swiper-wrapper img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
