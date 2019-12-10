@@ -59,6 +59,7 @@
   display: flex;
   flex-flow: column;
   width: 32%;
+  min-width: 240px;
 }
 
 .PlicePlan__planBoxPlus {

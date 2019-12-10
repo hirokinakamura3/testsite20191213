@@ -46,15 +46,31 @@
             width: 90%;
             margin: 0 auto;
             margin-top: 20px;
+            @include max-screen(860px){
+                flex-flow: column;
+            }
         }
         &__planBox {
             display: flex;
             flex-flow: column;
             width: 32%;
+            min-width: 240px;
+            @include max-screen(860px){
+                width: 60%;
+                margin: 0 auto;
+            }
         }
         &__planBoxPlus {
             text-align: center;
             font-size: 50px;
+            $this: &;
+            @include max-screen(860px){
+                display: none;
+            }
+            &--1{
+                @extend #{$this};
+                display: block;
+            }
         }
         &__plan {
             display: flex;

@@ -477,15 +477,39 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 860px) {
+  .PlicePlan__planList {
+    flex-flow: column;
+  }
+}
+
 .PlicePlan__planBox {
   display: flex;
   flex-flow: column;
   width: 32%;
+  min-width: 240px;
 }
 
-.PlicePlan__planBoxPlus {
+@media screen and (max-width: 860px) {
+  .PlicePlan__planBox {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.PlicePlan__planBoxPlus, .PlicePlan__planBoxPlus--1 {
   text-align: center;
   font-size: 50px;
+}
+
+@media screen and (max-width: 860px) {
+  .PlicePlan__planBoxPlus, .PlicePlan__planBoxPlus--1 {
+    display: none;
+  }
+}
+
+.PlicePlan__planBoxPlus--1 {
+  display: block;
 }
 
 .PlicePlan__plan {
