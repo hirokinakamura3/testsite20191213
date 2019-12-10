@@ -27,6 +27,9 @@
             display: block;
             margin: 0 auto;
             width: 70%;
+            @include max-screen($breakpoint-tablet) {
+                width: 95%;
+            }
         }
     }
 }

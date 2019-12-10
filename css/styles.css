@@ -15,10 +15,23 @@
   padding: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .Header__nav {
+    height: 60px;
+  }
+}
+
 .Header__item {
   width: 200px;
   margin-right: 10px;
   list-style: none;
+}
+
+@media screen and (max-width: 960px) {
+  .Header__item {
+    width: 33.3%;
+    margin-right: 0;
+  }
 }
 
 .Header__item:nth-child(1) {
@@ -26,8 +39,21 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 960px) {
+  .Header__item:nth-child(1) {
+    width: 33.3%;
+  }
+}
+
 .Header__itemInner1 {
   width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .Header__itemInner1 {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .Header__itemInner2, .Header__itemInner2--red {
@@ -37,6 +63,14 @@
   width: 100%;
   padding: 10px 0px;
   border-radius: 30px;
+  color: #000;
+}
+
+@media screen and (max-width: 960px) {
+  .Header__itemInner2, .Header__itemInner2--red {
+    border-radius: 0px;
+    padding: 20px 0px;
+  }
 }
 
 .Header__itemInner2--red {
@@ -53,6 +87,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 960px) {
+  .Header__msg {
+    height: 100px;
+  }
+}
+
 .Header__msgInner {
   display: block;
   width: 100%;
@@ -63,11 +103,24 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 960px) {
+  .Header__msgInner {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Header__msgInner {
+    font-size: 18px;
+  }
+}
+
 .Header__msgInner br {
   display: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 960px) {
   .Header__msgInner br {
     display: block;
   }
@@ -109,6 +162,12 @@
   padding-top: 30px;
 }
 
+@media screen and (max-width: 960px) {
+  .Catch__section {
+    padding: 30px 5px 0 5px;
+  }
+}
+
 .Catch__Catch_ttl {
   width: 100%;
   margin: 0 auto;
@@ -125,10 +184,34 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 960px) {
+  .Catch__txt {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Catch__txt {
+    font-size: 17px;
+  }
+}
+
 .Catch__txt span {
   color: #fa7800;
   font-size: 30px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .Catch__txt span {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Catch__txt span {
+    font-size: 20px;
+  }
 }
 
 .Catch__btn, .Catch__btn--orange {
@@ -143,6 +226,19 @@
   font-size: 20px;
   text-decoration: none;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  .Catch__btn, .Catch__btn--orange {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Catch__btn, .Catch__btn--orange {
+    font-size: 15px;
+  }
 }
 
 .Catch__btn--orange {
@@ -187,6 +283,12 @@
   width: 70%;
 }
 
+@media screen and (max-width: 960px) {
+  .Problem__img {
+    width: 95%;
+  }
+}
+
 .LashicRoom {
   width: 100%;
   height: auto;
@@ -228,14 +330,38 @@
   align-items: center;
 }
 
+@media screen and (max-width: 960px) {
+  .LashicRoom__mainImgs {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
 .LashicRoom__mainImg {
   width: 40%;
+}
+
+@media screen and (max-width: 960px) {
+  .LashicRoom__mainImg {
+    width: 90%;
+  }
 }
 
 .LashicRoom__txt1 {
   margin: 0 auto;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .LashicRoom__txt1 {
+    display: flex;
+    align-items: center;
+    color: #fa7800;
+    font-weight: bold;
+    padding-left: 65px;
+    font-size: 25px;
+  }
 }
 
 .LashicRoom__txt1 span {
@@ -246,6 +372,14 @@
   padding: 10px;
   border-radius: 50%;
   color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
+  .LashicRoom__txt1 span {
+    margin: 20px;
+    width: 40px;
+    padding: 0;
+  }
 }
 
 .LashicRoom__msg {
@@ -260,15 +394,47 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 960px) {
+  .LashicRoom__msgInner {
+    width: 80%;
+  }
+}
+
 .LashicRoom__txt2 {
   text-align: center;
   font-size: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  .LashicRoom__txt2 {
+    font-size: 14px;
+    padding: 0 5px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .LashicRoom__txt2 {
+    font-size: 12px;
+  }
 }
 
 .LashicRoom__txt2 span {
   color: #fa7800;
   font-size: 30px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .LashicRoom__txt2 span {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .LashicRoom__txt2 span {
+    font-size: 14px;
+  }
 }
 
 .LashicRoom__btn {
@@ -284,6 +450,19 @@
   text-decoration: none;
   border-radius: 30px;
   border: 1px solid #fa7800;
+}
+
+@media screen and (max-width: 960px) {
+  .LashicRoom__btn {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .LashicRoom__btn {
+    font-size: 15px;
+  }
 }
 
 .LashicRoom__triangle {
