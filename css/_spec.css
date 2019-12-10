@@ -14,6 +14,7 @@
 
 .Spec__boxOuter {
   width: 440px;
+  min-width: 320px;
   font-size: 16px;
 }
 

@@ -87,14 +87,18 @@
   padding: 20px;
 }
 
-.PlicePlan__txt1 {
+.PlicePlan__txt1, .PlicePlan__txt1--perMonth {
   text-align: center;
   color: #fa7800;
   font-weight: bold;
 }
 
-.PlicePlan__txt1 span {
+.PlicePlan__txt1 span, .PlicePlan__txt1--perMonth span {
   font-size: 55px;
+}
+
+.PlicePlan__txt1--perMonth {
+  line-height: 110px;
 }
 
 .PlicePlan__txt2 {
@@ -121,6 +125,11 @@
 
 .PlicePlan__txt3:hover {
   cursor: pointer;
+}
+
+.PlicePlan__txt3:active {
+  box-shadow: none;
+  transform: translate3d(0, 4px, 0);
 }
 
 .PlicePlan__caution {
