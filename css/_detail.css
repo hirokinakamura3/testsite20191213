@@ -36,7 +36,8 @@
 }
 
 .Detail__imgOuter {
-  width: calc(100% - 450px);
+  width: 50%;
+  min-width: 400px;
   padding: 50px;
   align-items: center;
 }
@@ -47,7 +48,7 @@
 }
 
 .Detail__txtOuter {
-  width: 450px;
+  width: 50%;
 }
 
 .Detail__box + .Detail__box {

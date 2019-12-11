@@ -12,6 +12,9 @@ input[type="checkbox"] {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
+        @include max-screen($breakpoint-tablet){
+            font-size: 13px;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -27,6 +30,11 @@ input[type="checkbox"] {
             opacity: 0.6;
             -webkit-transition: all 0.12s, border-color 0.08s;
             transition: all 0.12s, border-color 0.08s;
+            @include max-screen($breakpoint-tablet){
+                width: 17px;
+                height: 17px;
+                top: 10%;
+            }
         }
     }
     &:checked + label:before {

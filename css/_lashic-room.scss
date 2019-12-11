@@ -17,7 +17,6 @@
         }
         &__section {
             padding-top: 30px;
-
         }
         &__ttl {
             width: 100%;
@@ -27,6 +26,9 @@
             width: 50%;
             display: block;
             margin: 0 auto;
+            @include max-screen($breakpoint-tablet) {
+                width: 80%;
+            }
         }
         &__mainImgs {
             display: flex;
@@ -51,7 +53,7 @@
             @include max-screen($breakpoint-tablet) {
                 display: flex;
                 align-items: center;
-                color:  #fa7800;
+                color: #fa7800;
                 font-weight: bold;
                 padding-left: 65px;
                 font-size: 25px;
@@ -81,7 +83,7 @@
             display: block;
             margin: 0 auto;
             @include max-screen($breakpoint-tablet) {
-                width: 80%; 
+                width: 80%;
             }
         }
         &__txt2 {
@@ -133,6 +135,9 @@
         position: absolute;
         bottom: -4.5%;
         width: 100%;
+        @include max-screen($breakpoint-tablet) {
+            bottom: -2.5%;
+        }
         p {
             display: block;
             text-align: center;

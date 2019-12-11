@@ -35,14 +35,16 @@
         &__itemInner1 {
             width: 100%;
             @include max-screen($breakpoint-tablet) {
-                width: 80%;
+                width: 60%;
                 margin: 0 auto;
+                margin-top: 10px;
             }
         }
         &__itemInner2 {
             display: block;
             text-align: center;
             background-color: #ccc;
+            color: #000000;
             width: 100%;
             padding: 10px 0px;
             border-radius: 30px;

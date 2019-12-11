@@ -51,8 +51,9 @@
 
 @media screen and (max-width: 960px) {
   .Header__itemInner1 {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    margin-top: 10px;
   }
 }
 
@@ -60,6 +61,7 @@
   display: block;
   text-align: center;
   background-color: #ccc;
+  color: #000000;
   width: 100%;
   padding: 10px 0px;
   border-radius: 30px;
@@ -323,6 +325,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 960px) {
+  .LashicRoom__ttlInner {
+    width: 80%;
+  }
+}
+
 .LashicRoom__mainImgs {
   display: flex;
   justify-content: center;
@@ -471,6 +479,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  .LashicRoom__triangle {
+    bottom: -2.5%;
+  }
+}
+
 .LashicRoom__triangle p {
   display: block;
   text-align: center;
@@ -487,6 +501,12 @@
   background-color: #ffffff;
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .BestPlice {
+    padding-bottom: 10px;
+  }
 }
 
 .BestPlice__contents {
@@ -512,6 +532,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 960px) {
+  .BestPlice__ttlInner {
+    width: 70%;
+  }
+}
+
 .BestPlice__ttl2 {
   width: 100%;
   margin: auto;
@@ -522,6 +548,12 @@
   width: 55%;
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .BestPlice__ttl2Inner {
+    width: 85%;
+  }
 }
 
 .BestPlice__plan {
@@ -535,12 +567,25 @@
   color: #00a0b9;
 }
 
+@media screen and (max-width: 960px) {
+  .BestPlice__plan {
+    width: 95%;
+    font-size: 18px;
+  }
+}
+
 .BestPlice__priceList {
   display: flex;
   justify-content: space-between;
   width: 75%;
   margin: 0 auto;
   align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .BestPlice__priceList {
+    width: 95%;
+  }
 }
 
 .BestPlice__priceImg {
@@ -563,12 +608,26 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .BestPlice__caution {
+    font-size: 9px;
+    margin-left: 3%;
+  }
+}
+
 .BestPlice__triangle {
   display: block;
   margin-top: 40px;
   text-align: center;
   color: #7bcedb;
   font-size: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .BestPlice__triangle {
+    margin-top: 10px;
+    font-size: 50px;
+  }
 }
 
 .Label1 {
@@ -596,6 +655,13 @@
   line-height: 120px;
   font-size: 28px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
+  .Label1__txt {
+    line-height: 70px;
+    font-size: 18px;
+  }
 }
 
 .PlicePlan {
@@ -629,6 +695,12 @@
   padding: 10px 0;
 }
 
+@media screen and (max-width: 960px) {
+  .PlicePlan__firstBoxLabel {
+    font-size: 16px;
+  }
+}
+
 .PlicePlan__firstBoxForm {
   display: flex;
   justify-content: center;
@@ -655,15 +727,40 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .PlicePlan__planList {
+    width: 98%;
+    margin-top: 10px;
+  }
+}
+
 .PlicePlan__planBox {
   display: flex;
   flex-flow: column;
   width: 32%;
+  min-width: 240px;
 }
 
-.PlicePlan__planBoxPlus {
+@media screen and (max-width: 860px) {
+  .PlicePlan__planBox {
+    min-width: 100px;
+    margin: 0 auto;
+  }
+}
+
+.PlicePlan__planBoxPlus, .PlicePlan__planBoxPlus--1 {
   text-align: center;
   font-size: 50px;
+}
+
+@media screen and (max-width: 860px) {
+  .PlicePlan__planBoxPlus, .PlicePlan__planBoxPlus--1 {
+    font-size: 20px;
+  }
+}
+
+.PlicePlan__planBoxPlus--1 {
+  display: block;
 }
 
 .PlicePlan__plan {
@@ -671,6 +768,12 @@
   flex-flow: column;
   border: 1px solid #00a0b9;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan__plan {
+    margin-top: 5px;
+  }
 }
 
 .PlicePlan__pliceLabel {
@@ -681,20 +784,56 @@
   padding: 10px 0;
 }
 
+@media screen and (max-width: 960px) {
+  .PlicePlan__pliceLabel {
+    font-size: 12px;
+  }
+}
+
 .PlicePlan__pliceContent {
   display: flex;
   flex-flow: column;
   padding: 20px;
 }
 
-.PlicePlan__txt1 {
+@media screen and (max-width: 960px) {
+  .PlicePlan__pliceContent {
+    padding: 3px;
+    padding-bottom: 15px;
+  }
+}
+
+.PlicePlan__txt1, .PlicePlan__txt1--perMonth {
   text-align: center;
   color: #fa7800;
   font-weight: bold;
+  font-size: 21px;
 }
 
-.PlicePlan__txt1 span {
+@media screen and (max-width: 960px) {
+  .PlicePlan__txt1, .PlicePlan__txt1--perMonth {
+    font-size: 12px;
+  }
+}
+
+.PlicePlan__txt1 span, .PlicePlan__txt1--perMonth span {
   font-size: 55px;
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan__txt1 span, .PlicePlan__txt1--perMonth span {
+    font-size: 21px;
+  }
+}
+
+.PlicePlan__txt1--perMonth {
+  line-height: 110px;
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan__txt1--perMonth {
+    line-height: 393%;
+  }
 }
 
 .PlicePlan__txt2 {
@@ -702,8 +841,20 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 960px) {
+  .PlicePlan__txt2 {
+    font-size: 6px;
+  }
+}
+
 .PlicePlan__txt2 span {
   font-size: 28px;
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan__txt2 span {
+    font-size: 12px;
+  }
 }
 
 .PlicePlan__txt3 {
@@ -723,6 +874,18 @@
   cursor: pointer;
 }
 
+.PlicePlan__txt3:active {
+  box-shadow: none;
+  transform: translate3d(0, 4px, 0);
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan__txt3 {
+    font-size: 12px;
+    margin-top: 9px;
+  }
+}
+
 .PlicePlan__caution {
   width: 90%;
   text-align: left;
@@ -730,11 +893,24 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .PlicePlan__caution {
+    font-size: 9px;
+    margin-top: 8px;
+  }
+}
+
 .PlicePlan__more {
   display: block;
   width: 40%;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan__more {
+    width: 80%;
+  }
 }
 
 .PlicePlan__sleepImg {
@@ -765,6 +941,14 @@
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 960px) {
+  .Application__contents {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+  }
+}
+
 .Application__box {
   border: 1px solid #00a0b9;
   width: 80%;
@@ -776,6 +960,14 @@
 
 .Application__box:nth-of-type(4) {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .Application__box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5%;
+  }
 }
 
 .Application__innerTxt {
@@ -792,6 +984,12 @@
 
 .Application__innerTxt input {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .Application__innerTxt {
+    font-size: 14px;
+  }
 }
 
 .Application__price {
@@ -825,6 +1023,11 @@
   box-shadow: 0px 4px 0px 0px #b2095b;
 }
 
+.Application__btn:active {
+  box-shadow: none;
+  transform: translate3d(0, 4px, 0);
+}
+
 .Media {
   width: 100%;
   height: auto;
@@ -835,7 +1038,7 @@
   width: 100%;
   margin: 0 auto;
   height: auto;
-  background-color: #DB2A26;
+  background-color: #db2a26;
 }
 
 .Media__txt {
@@ -856,6 +1059,24 @@
   width: 90%;
 }
 
+@media screen and (max-width: 960px) {
+  .Media__box {
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Media__news {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Media__market {
+    margin-bottom: 40px;
+  }
+}
+
 .Life {
   width: 100%;
   height: auto;
@@ -864,8 +1085,14 @@
 
 .Life__label {
   width: 100%;
-  height: 200px;
   background-color: #fff;
+  max-height: 150px;
+}
+
+.Life__label:before {
+  content: "";
+  display: block;
+  padding-top: 20%;
 }
 
 .Life__head {
@@ -926,6 +1153,12 @@ input[type="checkbox"] + label {
   -ms-user-select: none;
 }
 
+@media screen and (max-width: 960px) {
+  input[type="checkbox"] + label {
+    font-size: 13px;
+  }
+}
+
 input[type="checkbox"] + label:last-child {
   margin-bottom: 0;
 }
@@ -942,6 +1175,14 @@ input[type="checkbox"] + label:before {
   opacity: 0.6;
   -webkit-transition: all 0.12s, border-color 0.08s;
   transition: all 0.12s, border-color 0.08s;
+}
+
+@media screen and (max-width: 960px) {
+  input[type="checkbox"] + label:before {
+    width: 17px;
+    height: 17px;
+    top: 10%;
+  }
 }
 
 input[type="checkbox"]:checked + label:before {
@@ -967,7 +1208,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .Detail__wrapper {
-  width: 960px;
+  width: 100%;
+  max-width: 1200px;
   margin: 40px auto;
 }
 
@@ -976,7 +1218,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .Detail__headOuter {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding: 13px 0 12px;
   border: 1px solid #00aec7;
 }
@@ -990,11 +1233,19 @@ input[type="checkbox"]:checked + label:before {
 .Detail__body {
   display: flex;
   justify-content: flex-start;
+  margin: 0 auto;
   margin-top: 30px;
+  width: 90%;
+}
+
+@media screen and (max-width: 960px) {
+  .Detail__body {
+    flex-flow: column;
+  }
 }
 
 .Detail__imgOuter {
-  width: calc(100% - 450px);
+  width: 50%;
   padding: 50px;
   align-items: center;
 }
@@ -1004,8 +1255,22 @@ input[type="checkbox"]:checked + label:before {
   width: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  .Detail__imgOuter {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 .Detail__txtOuter {
-  width: 450px;
+  width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+  .Detail__txtOuter {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 .Detail__box + .Detail__box {
@@ -1017,7 +1282,7 @@ input[type="checkbox"]:checked + label:before {
   text-align: center;
   font-size: 18px;
   color: #fff;
-  background-color: #00A0B9;
+  background-color: #00a0b9;
 }
 
 .Detail__boxTxt {
@@ -1034,21 +1299,30 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .Spec__Ttl {
+  width: 90%;
+  margin: 0 auto;
   padding-bottom: 3px;
   font-size: 22px;
-  color: #00A0B9;
-  border-bottom: 1px solid #00A0B9;
+  color: #00a0b9;
+  border-bottom: 1px solid #00a0b9;
 }
 
 .Spec__body {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row wrap;
   margin-top: 30px;
 }
 
+@media screen and (max-width: 960px) {
+  .Spec__body {
+    flex-flow: column;
+  }
+}
+
 .Spec__boxOuter {
   width: 440px;
+  min-width: 320px;
   font-size: 16px;
 }
 
@@ -1056,19 +1330,26 @@ input[type="checkbox"]:checked + label:before {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 960px) {
+  .Spec__boxOuter {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 .Spec__head {
   font-size: 18px;
-  color: #00A0B9;
+  color: #00a0b9;
 }
 
 .Spec__box {
   margin-top: 15px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
 }
 
 .Spec__boxTtl {
   padding: 9px 20px 7px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .Spec__boxTxt {

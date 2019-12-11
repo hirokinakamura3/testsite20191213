@@ -5,6 +5,9 @@
     background-color: #ffffff;
     padding-top: 20px;
     padding-bottom: 40px;
+    @include max-screen($breakpoint-tablet){
+        padding-bottom: 10px;
+    }
     @at-root {
         &__contents {
             width: 100%;
@@ -24,6 +27,9 @@
             width: 40%;
             display: block;
             margin: 0 auto;
+            @include max-screen($breakpoint-tablet){
+                width: 70%;
+            }
         }
         &__ttl2 {
             width: 100%;
@@ -34,6 +40,9 @@
             width: 55%;
             display: block;
             margin: 0 auto;
+            @include max-screen($breakpoint-tablet){
+                width: 85%;
+            }
         }
         &__plan {
             text-align: center;
@@ -44,6 +53,10 @@
             margin-bottom: 40px;
             padding: 10px;
             color: #00a0b9;
+            @include max-screen($breakpoint-tablet){
+                width: 95%;
+                font-size: 18px;
+            }
         }
         &__priceList {
             display: flex;
@@ -51,6 +64,9 @@
             width: 75%;
             margin: 0 auto;
             align-items: center;
+            @include max-screen($breakpoint-tablet){
+                width: 95%;
+            }
         }
         &__priceImg {
             display: block;
@@ -68,6 +84,10 @@
             width: 75%;
             margin: 0 auto;
             margin-top: 20px;
+            @include max-screen($breakpoint-tablet){
+                font-size: 9px;
+                margin-left: 3%;
+            }
         }
         &__triangle {
             display: block;
@@ -75,6 +95,10 @@
             text-align: center;
             color: #7bcedb;
             font-size: 50px;
+            @include max-screen($breakpoint-tablet){
+                margin-top: 10px;
+                font-size: 50px;
+            }
         }
     }
 }

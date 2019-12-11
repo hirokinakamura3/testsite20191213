@@ -21,6 +21,10 @@
             line-height: 120px;
             font-size: 28px;
             color: #ffffff;
+            @include max-screen($breakpoint-tablet){
+                line-height: 70px;
+                font-size: 18px;
+            }
         }
     }
 }

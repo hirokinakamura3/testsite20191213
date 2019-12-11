@@ -7,7 +7,7 @@
             width: 100%;
             margin: 0 auto;
             height: auto;
-            background-color: #DB2A26;
+            background-color: #db2a26;
         }
         &__txt {
             width: 100%;
@@ -24,6 +24,19 @@
             justify-content: space-between;
             align-items: center;
             width: 90%;
+            @include max-screen($breakpoint-tablet) {
+                flex-flow: column;
+            }
+        }
+        &__news {
+            @include max-screen($breakpoint-tablet) {
+                margin-bottom: 40px;
+            }
+        }
+        &__market {
+            @include max-screen($breakpoint-tablet) {
+                margin-bottom: 40px;
+            }
         }
     }
 }

@@ -5,8 +5,13 @@
     @at-root {
         &__label {
             width: 100%;
-            height: 200px;
             background-color: #fff;
+            max-height: 150px;
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 20%;
+            }
         }
         &__head {
             width: 100%;
