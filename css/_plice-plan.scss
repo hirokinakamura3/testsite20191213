@@ -61,9 +61,8 @@
             width: 32%;
             min-width: 240px;
             @include max-screen(860px) {
-                min-width: 100px;
+                min-width: 104px;
                 margin: 0 auto;
-
             }
         }
         &__planBoxPlus {
@@ -102,8 +101,9 @@
             flex-flow: column;
             padding: 20px;
             @include max-screen($breakpoint-tablet){
-                padding: 3px;
+                padding: 0px;
                 padding-bottom: 15px;
+                padding-top: 10px;
             }
         }
         &__txt1 {
@@ -138,7 +138,7 @@
             span {
                 font-size: 28px;
                 @include max-screen($breakpoint-tablet) {
-                    font-size: 12px;
+                    font-size: 11px;
                 }
             }
         }

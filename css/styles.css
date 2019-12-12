@@ -743,7 +743,7 @@
 
 @media screen and (max-width: 860px) {
   .PlicePlan__planBox {
-    min-width: 100px;
+    min-width: 104px;
     margin: 0 auto;
   }
 }
@@ -798,8 +798,9 @@
 
 @media screen and (max-width: 960px) {
   .PlicePlan__pliceContent {
-    padding: 3px;
+    padding: 0px;
     padding-bottom: 15px;
+    padding-top: 10px;
   }
 }
 
@@ -853,7 +854,7 @@
 
 @media screen and (max-width: 960px) {
   .PlicePlan__txt2 span {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -1008,6 +1009,13 @@
   text-align: left;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .Application__caution {
+    font-size: 9px;
+    margin-left: 2%;
+  }
 }
 
 .Application__btn {
