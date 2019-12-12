@@ -14,6 +14,7 @@
                 width: 100%;
                 padding: 10px;
                 padding-top: 20px;
+                padding-bottom: 30px;
             }
         }
         &__box {
@@ -53,6 +54,9 @@
             font-size: 24px;
             text-align: left;
             padding-left: 7%;
+            @include max-screen($breakpoint-tablet){
+                font-size: 13px;
+            }
         }
         &__monthPrice {
             font-size: 32px;
@@ -81,6 +85,10 @@
             &:active {
                 box-shadow: none;
                 transform: translate3d(0, 4px, 0);
+            }
+            @include max-screen($breakpoint-tablet){
+                width: 100%;
+                font-size: 16px;
             }
         }
     }

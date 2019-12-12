@@ -947,6 +947,7 @@
     width: 100%;
     padding: 10px;
     padding-top: 20px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1000,6 +1001,12 @@
   padding-left: 7%;
 }
 
+@media screen and (max-width: 960px) {
+  .Application__price {
+    font-size: 13px;
+  }
+}
+
 .Application__monthPrice {
   font-size: 32px;
 }
@@ -1034,6 +1041,13 @@
 .Application__btn:active {
   box-shadow: none;
   transform: translate3d(0, 4px, 0);
+}
+
+@media screen and (max-width: 960px) {
+  .Application__btn {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 .Media {
@@ -1117,6 +1131,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 960px) {
+  .Life__contents1 {
+    height: 60px;
+  }
+}
+
 .Life__headImg {
   display: block;
   width: 80%;
@@ -1124,6 +1144,13 @@
   position: absolute;
   bottom: 0;
   left: 12%;
+}
+
+@media screen and (max-width: 960px) {
+  .Life__headImg {
+    width: 50%;
+    left: 25%;
+  }
 }
 
 .Life__contents2 {

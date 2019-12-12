@@ -24,6 +24,9 @@
             margin: 0 auto;
             height: 150px;
             position: relative;
+            @include max-screen($breakpoint-tablet) {
+                height: 60px;
+            }
         }
         &__headImg {
             display: block;
@@ -32,6 +35,10 @@
             position: absolute;
             bottom: 0;
             left: 12%;
+            @include max-screen($breakpoint-tablet) {
+                width: 50%;
+                left: 25%;
+            }
         }
         &__contents2 {
             width: 100%;
