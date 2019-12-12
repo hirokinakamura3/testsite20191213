@@ -22,6 +22,9 @@
             width: 440px;
             min-width: 320px;
             font-size: 16px;
+            & + & {
+                margin-top: 30px;
+            }
             & + & + & {
                 margin-top: 30px;
             }
@@ -33,17 +36,29 @@
         &__head {
             font-size: 18px;
             color: #00a0b9;
+            @include max-screen($breakpoint-tablet) {
+                font-size: 13px;
+            }
         }
         &__box {
             margin-top: 15px;
             border: 1px solid #e6e6e6;
+            @include max-screen($breakpoint-tablet){
+                margin-top: 5px;
+            }
         }
         &__boxTtl {
             padding: 9px 20px 7px;
             background-color: #e6e6e6;
+            @include max-screen($breakpoint-tablet) {
+                font-size: 12px;
+            }
         }
         &__boxTxt {
             padding: 9px 20px 7px;
+            @include max-screen($breakpoint-tablet) {
+                font-size: 12px;
+            }
         }
     }
 }

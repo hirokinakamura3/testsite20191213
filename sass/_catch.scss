@@ -26,6 +26,18 @@
             width: 80%;
             display: block;
             margin: 0 auto;
+            $this: &;
+            @include max-screen($breakpoint-tablet){
+                display: none;
+            }
+            &--sp{
+                @extend #{$this};
+                display: none;
+                @include max-screen($breakpoint-tablet){
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
         }
         &__txt {
             text-align: center;

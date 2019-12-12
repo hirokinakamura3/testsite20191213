@@ -36,8 +36,8 @@
             bottom: 0;
             left: 12%;
             @include max-screen($breakpoint-tablet) {
-                width: 50%;
-                left: 25%;
+                width: 70%;
+                left: 17%;
             }
         }
         &__contents2 {
@@ -46,6 +46,9 @@
             height: auto;
             margin: 0 auto;
             padding: 60px;
+            @include max-screen($breakpoint-tablet){
+                padding: 30px;
+            }
         }
         &__contentImg {
             display: block;
@@ -54,6 +57,10 @@
         }
         &__contentTxt {
             line-height: 30px;
+            @include max-screen($breakpoint-tablet){
+                font-size: 14px;
+                line-height: 23px;
+            }
         }
     }
 }

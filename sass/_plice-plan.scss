@@ -82,8 +82,23 @@
             flex-flow: column;
             border: 1px solid #00a0b9;
             margin-top: 20px;
+            $this: &;
             @include max-screen($breakpoint-tablet){
                 margin-top: 5px;
+            }
+            &--recommend{
+                @extend #{$this};
+                position: relative;
+                img{
+                    width:30%;
+                    position: absolute;
+                    top: -14%;
+                    left: -14%;
+                    @include max-screen($breakpoint-tablet){
+                        top: -12%;
+                        left: -4%;
+                    }
+                }
             }
         }
         &__pliceLabel {

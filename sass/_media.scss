@@ -15,6 +15,10 @@
             line-height: 120px;
             font-size: 28px;
             color: #ffffff;
+            @include max-screen($breakpoint-tablet){
+                font-size: 17px;
+                line-height: 70px;
+            }
         }
         &__box {
             max-width: 960px;
@@ -26,6 +30,7 @@
             width: 90%;
             @include max-screen($breakpoint-tablet) {
                 flex-flow: column;
+                padding: none;
             }
         }
         &__news {
@@ -36,6 +41,7 @@
         &__market {
             @include max-screen($breakpoint-tablet) {
                 margin-bottom: 40px;
+                width: 100%;
             }
         }
     }
