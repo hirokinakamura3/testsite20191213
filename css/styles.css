@@ -1481,6 +1481,7 @@ input[type="checkbox"]:checked + label:before {
 @media screen and (max-width: 960px) {
   .Spec__head {
     font-size: 13px;
+    padding-left: 5px;
   }
 }
 

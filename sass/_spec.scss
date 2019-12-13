@@ -38,6 +38,7 @@
             color: #00a0b9;
             @include max-screen($breakpoint-tablet) {
                 font-size: 13px;
+                padding-left: 5px;
             }
         }
         &__box {
