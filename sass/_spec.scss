@@ -23,7 +23,9 @@
             min-width: 320px;
             font-size: 16px;
             & + & {
-                margin-top: 30px;
+                @include max-screen($breakpoint-tablet) {
+                    margin-top: 30px;
+                }
             }
             & + & + & {
                 margin-top: 30px;
@@ -44,7 +46,7 @@
         &__box {
             margin-top: 15px;
             border: 1px solid #e6e6e6;
-            @include max-screen($breakpoint-tablet){
+            @include max-screen($breakpoint-tablet) {
                 margin-top: 5px;
             }
         }
