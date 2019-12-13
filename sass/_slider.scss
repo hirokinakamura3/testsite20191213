@@ -1,6 +1,9 @@
 .swiper-container {
-    widows: 100%;
+    width: 100%;
     max-width: 1200px;
+    @include max-screen($breakpoint-tablet){
+        display: none;
+    }
     .swiper-wrapper {
         width: 100%;
         margin: 0 auto;
@@ -10,4 +13,11 @@
             margin: 0 auto;
         }
     }
+    & + &{
+        display: none;
+        @include max-screen($breakpoint-tablet){
+            display: block;
+        }
+    }
 }
+
