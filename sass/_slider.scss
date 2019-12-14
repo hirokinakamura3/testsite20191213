@@ -19,5 +19,16 @@
             display: block;
         }
     }
+    .swiper-button-prev{
+        @include max-screen($breakpoint-tablet){
+            display: none;
+        }
+    }
+    .swiper-button-next{
+        @include max-screen($breakpoint-tablet){
+            display: none;
+        }
+    }
+
 }
 

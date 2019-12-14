@@ -6,7 +6,8 @@
     <meta name="format-detection" content="telephone=no">
     <title>LASHIC｜INFICの高齢者見守りセンサー</title>
     <meta name="keywords" content="高齢者,見守り,カメラ,LASHIC">
-    <meta name="description" content="高齢者をセンサーで24時間見守り、異変をAIで検知・予知してスマートフォンへ自動通知するLASHIC(ラシク)の紹介ページです。カメラ無しのセンサー式だから、高齢者のプライバシーを守りながらリアルタイムで様子が分かります。設置も簡単で業者いらず！">
+    <meta name="description"
+        content="高齢者をセンサーで24時間見守り、異変をAIで検知・予知してスマートフォンへ自動通知するLASHIC(ラシク)の紹介ページです。カメラ無しのセンサー式だから、高齢者のプライバシーを守りながらリアルタイムで様子が分かります。設置も簡単で業者いらず！">
     <meta property="og:title" content="LASHIC(ラシク)-最新の高齢者見守りサービス">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://test.com/">
@@ -175,15 +176,16 @@
         </div>
     </div>
 
+    <form action="#" method="post">
     <div class="PlicePlan">
         <div class="PlicePlan__contents">
             <section class="PlicePlan__section">
                 <div class="PlicePlan__firstBox">
                     <p class="PlicePlan__firstBoxLabel">＼ご家庭にWi-Fiがなくても安心／</p>
-                    <form class="PlicePlan__firstBoxForm">
+                    <div class="PlicePlan__firstBoxForm">
                         <input type="checkbox" id="box-1">
                         <label for="box-1">通信端末レンタル申込(980円/月)</label>
-                    </form>
+                    </div>
                 </div>
                 <div class="PlicePlan__planList">
                     <div class="PlicePlan__planBox">
@@ -194,7 +196,7 @@
                             <div class="PlicePlan__pliceContent">
                                 <p class="PlicePlan__txt1"><span>980</span>円/月</p>
                                 <p class="PlicePlan__txt2">12か月分<span>11,760</span>円</p>
-                                <p class="PlicePlan__txt3">購入申込へ</p>
+                                <input name="perMonth" type="submit" class="PlicePlan__txt3" value="購入申込へ">
                             </div>
                         </div>
                     </div>
@@ -205,7 +207,7 @@
                             <div class="PlicePlan__pliceContent">
                                 <p class="PlicePlan__txt1"><span>1,100</span>円/月</p>
                                 <p class="PlicePlan__txt2">6か月分<span>6,600</span>円</p>
-                                <p class="PlicePlan__txt3">購入申込へ</p>
+                                <input name="per6Month" type="submit" class="PlicePlan__txt3" value="購入申込へ">
                             </div>
                         </div>
                     </div>
@@ -215,7 +217,7 @@
                             <p class="PlicePlan__pliceLabel">毎月支払い</p>
                             <div class="PlicePlan__pliceContent">
                                 <p class="PlicePlan__txt1--perMonth"><span>1,200</span>円/月</p>
-                                <p class="PlicePlan__txt3">購入申込へ</p>
+                                <input name="per1Year" type="submit" class="PlicePlan__txt3" value="購入申込へ">
                             </div>
                         </div>
                     </div>
@@ -227,6 +229,7 @@
             </section>
         </div>
     </div>
+    </form>
 
     <div class="Label1">
         <div class="Label1__contents">
@@ -234,29 +237,31 @@
         </div>
     </div>
 
-    <div class="Application">
-        <div class="Application__contents">
-            <div class="Application__box">
-                <p class="Application__innerTxt"><span>▼</span>sleep・callの両方を追加したい</p>
+    <form action="#" method="post">
+        <div class="Application">
+            <div class="Application__contents">
+                <div class="Application__box">
+                    <p class="Application__innerTxt"><span>▼</span>sleep・callの両方を追加したい</p>
+                </div>
+                <div class="Application__box">
+                    <p class="Application__innerTxt"><span>▼</span>1年一括支払い</p>
+                </div>
+                <div class="Application__box">
+                    <p class="Application__innerTxt">
+                        <input type="checkbox" id="box-2" name="submit4">
+                        <label for="box-2">通信端末レンタル申込(980円/月)</label>
+                    </p>
+                </div>
+                <div class="Application__box">
+                    <p class="Application__price">月々の金額<span class="Application__monthPrice">〇〇</span>円/月</p>
+                    <p class="Application__price">初期費用：<span>〇〇</span>円</p>
+                    <p class="Application__price">初回支払：<span>〇〇</span>円</p>
+                </div>
+                <p class="Application__caution">※記載金額には別途消費税を含みます</p>
+                <input type="submit" class="Application__btn" value="購入申込へ">
             </div>
-            <div class="Application__box">
-                <p class="Application__innerTxt"><span>▼</span>1年一括支払い</p>
-            </div>
-            <div class="Application__box">
-                <p class="Application__innerTxt">
-                    <input type="checkbox" id="box-2">
-                    <label for="box-2">通信端末レンタル申込(980円/月)</label>
-                </p>
-            </div>
-            <div class="Application__box">
-                <p class="Application__price">月々の金額<span class="Application__monthPrice">〇〇</span>円/月</p>
-                <p class="Application__price">初期費用：<span>〇〇</span>円</p>
-                <p class="Application__price">初回支払：<span>〇〇</span>円</p>
-            </div>
-            <p class="Application__caution">※記載金額には別途消費税を含みます</p>
-            <a class="Application__btn" href="">購入申込へ</a>
         </div>
-    </div>
+    </form>
 
     <!-- pc用 -->
     <div class="swiper-container">
@@ -280,9 +285,9 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_01_sp.png"></div>
-            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_02_sp.png"></div>
-            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_03_sp.png"></div>
+            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider2_01_sp.png"></div>
+            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider2_02_sp.png"></div>
+            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider2_03_sp.png"></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>

@@ -82,6 +82,8 @@
             padding: 20px 0;
             font-size: 28px;
             box-shadow: 0px 4px 0px 0px #b2095b;
+            outline: 0;
+            border: none;
             &:active {
                 box-shadow: none;
                 transform: translate3d(0, 4px, 0);

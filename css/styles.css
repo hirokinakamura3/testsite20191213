@@ -160,6 +160,18 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .swiper-container .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .swiper-container .swiper-button-next {
+    display: none;
+  }
+}
+
 .Catch {
   width: 100%;
   height: auto;
@@ -920,6 +932,8 @@
   color: #ffffff;
   padding: 10px 0;
   box-shadow: 0px 4px 0px 0px #b2095b;
+  outline: none;
+  border: none;
 }
 
 .PlicePlan__txt3:hover {
@@ -1087,6 +1101,8 @@
   padding: 20px 0;
   font-size: 28px;
   box-shadow: 0px 4px 0px 0px #b2095b;
+  outline: 0;
+  border: none;
 }
 
 .Application__btn:active {
