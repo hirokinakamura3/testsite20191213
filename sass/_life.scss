@@ -24,8 +24,11 @@
             margin: 0 auto;
             height: 150px;
             position: relative;
-            @include max-screen($breakpoint-tablet) {
-                height: 60px;
+            @include screen(800px, 960px) {
+                height: 150px;
+            }
+            @include max-screen(650px){
+                height: 70px;
             }
         }
         &__headImg {
@@ -38,6 +41,15 @@
             @include max-screen($breakpoint-tablet) {
                 width: 70%;
                 left: 17%;
+                display: none;
+            }
+            $this: &;
+            &--sp{
+                @extend #{$this};
+                display: none;
+                @include max-screen($breakpoint-tablet){
+                    display: block;
+                }
             }
         }
         &__contents2 {

@@ -1207,13 +1207,19 @@
   position: relative;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 800px) and (max-width: 960px) {
   .Life__contents1 {
-    height: 60px;
+    height: 150px;
   }
 }
 
-.Life__headImg {
+@media screen and (max-width: 650px) {
+  .Life__contents1 {
+    height: 70px;
+  }
+}
+
+.Life__headImg, .Life__headImg--sp {
   display: block;
   width: 80%;
   margin: 0 auto;
@@ -1223,9 +1229,20 @@
 }
 
 @media screen and (max-width: 960px) {
-  .Life__headImg {
+  .Life__headImg, .Life__headImg--sp {
     width: 70%;
     left: 17%;
+    display: none;
+  }
+}
+
+.Life__headImg--sp {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .Life__headImg--sp {
+    display: block;
   }
 }
 
