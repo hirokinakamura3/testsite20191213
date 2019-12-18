@@ -919,7 +919,7 @@
 }
 
 .PlicePlan__txt3 {
-  display: block;
+  -webkit-appearance: none;
   text-align: center;
   background-color: #ee275b;
   width: 90%;
