@@ -338,7 +338,6 @@
   background-color: #f2f2f2;
   position: relative;
   margin-bottom: 30px;
-  z-index: -100;
 }
 
 .LashicRoom__contents {
@@ -497,6 +496,10 @@
   text-decoration: none;
   border-radius: 30px;
   border: 1px solid #fa7800;
+}
+
+.LashicRoom__btn:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {

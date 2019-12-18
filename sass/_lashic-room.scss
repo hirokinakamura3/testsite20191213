@@ -6,7 +6,6 @@
     background-color: #f2f2f2;
     position: relative;
     margin-bottom: 30px;
-    z-index: -100;
     @at-root {
         &__contents {
             width: 100%;
@@ -122,6 +121,9 @@
             text-decoration: none;
             border-radius: 30px;
             border: 1px solid #fa7800;
+            &:hover{
+                cursor: pointer;
+            }
             @include max-screen($breakpoint-tablet) {
                 width: 90%;
                 font-size: 18px;
