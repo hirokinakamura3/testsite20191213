@@ -49,11 +49,10 @@
             width: 90%;
             margin: 0 auto;
             margin-top: 20px;
-            @include max-screen($breakpoint-tablet){
+            @include max-screen($breakpoint-tablet) {
                 width: 98%;
                 margin-top: 10px;
             }
-
         }
         &__planBox {
             display: flex;
@@ -83,18 +82,18 @@
             border: 1px solid #00a0b9;
             margin-top: 20px;
             $this: &;
-            @include max-screen($breakpoint-tablet){
+            @include max-screen($breakpoint-tablet) {
                 margin-top: 5px;
             }
-            &--recommend{
+            &--recommend {
                 @extend #{$this};
                 position: relative;
-                img{
-                    width:30%;
+                img {
+                    width: 30%;
                     position: absolute;
                     top: -14%;
                     left: -14%;
-                    @include max-screen($breakpoint-tablet){
+                    @include max-screen($breakpoint-tablet) {
                         top: -12%;
                         left: -4%;
                     }
@@ -115,7 +114,7 @@
             display: flex;
             flex-flow: column;
             padding: 20px;
-            @include max-screen($breakpoint-tablet){
+            @include max-screen($breakpoint-tablet) {
                 padding: 0px;
                 padding-bottom: 15px;
                 padding-top: 10px;
@@ -139,7 +138,7 @@
             &--perMonth {
                 @extend #{$this};
                 line-height: 110px;
-                @include max-screen($breakpoint-tablet){
+                @include max-screen($breakpoint-tablet) {
                     line-height: 393%;
                 }
             }
@@ -187,9 +186,9 @@
             text-align: left;
             margin: 0 auto;
             margin-top: 20px;
-            @include max-screen($breakpoint-tablet){
+            @include max-screen($breakpoint-tablet) {
                 font-size: 9px;
-                margin-top:8px;
+                margin-top: 8px;
             }
         }
         &__more {
@@ -197,9 +196,13 @@
             width: 40%;
             margin: 0 auto;
             margin-top: 40px;
-            @include max-screen($breakpoint-tablet){
+            @include max-screen($breakpoint-tablet) {
                 width: 80%;
             }
+        }
+        &__toBeRelease {
+            width: 100%;
+            text-align: center;
         }
         &__sleepImg {
             display: block;

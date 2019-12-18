@@ -976,6 +976,11 @@
   }
 }
 
+.PlicePlan__toBeRelease {
+  width: 100%;
+  text-align: center;
+}
+
 .PlicePlan__sleepImg {
   display: block;
   width: 93%;
