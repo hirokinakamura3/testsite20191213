@@ -233,10 +233,10 @@
                 width: 100%;
                 text-align: center;
                 color: #ffffff;
-                font-size: 24px;
+                font-size: 36px;
                 font-weight: bold;
                 @include max-screen($breakpoint-tablet){
-                    font-size: 18px;
+                    font-size: 26px;
                 }
             }
         }
