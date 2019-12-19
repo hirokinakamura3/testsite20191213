@@ -205,15 +205,42 @@
             width: 100%;
             text-align: center;
         }
+        &__imgOuter {
+            display: block;
+            position: relative;
+            width: 96%;
+            margin: 0 auto;
+            $this: &;
+            &--2{
+                @extend #{$this};
+                margin-top: 20px;
+            }
+        }
+        &__imgCover {
+            width: 97%;
+            height: 96%;
+            position: absolute;
+            left: 1.5%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            p{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                font-size: 24px;
+                @include max-screen($breakpoint-tablet){
+                    font-size: 14px;
+                }
+            }
+        }
         &__sleepImg {
             display: block;
-            width: 93%;
-            margin: 0 auto;
-            margin-top: 20px;
+            width: 100%;
         }
         &__callImg {
             display: block;
-            width: 93%;
+            width: 100%;
             margin: 0 auto;
         }
     }
