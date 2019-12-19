@@ -84,9 +84,11 @@
             flex-flow: column;
             border: 1px solid #00a0b9;
             margin-top: 20px;
+            height: auto;
             $this: &;
             @include max-screen($breakpoint-tablet) {
                 margin-top: 5px;
+                max-height: 160px;
             }
             &--recommend {
                 @extend #{$this};

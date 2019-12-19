@@ -833,11 +833,13 @@
   flex-flow: column;
   border: 1px solid #00a0b9;
   margin-top: 20px;
+  height: auto;
 }
 
 @media screen and (max-width: 960px) {
   .PlicePlan__plan, .PlicePlan__plan--recommend {
     margin-top: 5px;
+    max-height: 160px;
   }
 }
 
