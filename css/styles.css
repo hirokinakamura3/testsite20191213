@@ -544,13 +544,14 @@
   height: auto;
   margin: 0 auto;
   background-color: #ffffff;
-  padding-top: 20px;
   padding-bottom: 40px;
+  padding-top: 90px;
 }
 
 @media screen and (max-width: 960px) {
   .BestPlice {
     padding-bottom: 10px;
+    padding-top: 70px;
   }
 }
 
@@ -1424,6 +1425,10 @@ input[type="checkbox"]:checked + label:before {
   transform: rotate(45deg);
 }
 
+.Detail {
+  padding-top: 65px;
+}
+
 .Detail__Ttl {
   width: 100%;
   text-align: center;
@@ -1728,54 +1733,4 @@ body .toPageTop:hover {
 
 body .toPageTop img {
   width: 100%;
-}
-
-.Toptext {
-  width: 100%;
-  max-width: 960px;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  padding-top: 141px;
-}
-
-@media screen and (max-width: 960px) {
-  .Toptext {
-    height: 100px;
-  }
-}
-
-.Toptext__innerMsg {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: -62px;
-  text-align: center;
-  color: #00a0b9;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-@media screen and (max-width: 960px) {
-  .Toptext__innerMsg {
-    padding-bottom: 20px;
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .Toptext__innerMsg {
-    font-size: 18px;
-  }
-}
-
-.Toptext__innerMsg br {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .Toptext__innerMsg br {
-    display: block;
-  }
 }

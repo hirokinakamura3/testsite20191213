@@ -3,10 +3,11 @@
     height: auto;
     margin: 0 auto;
     background-color: #ffffff;
-    padding-top: 20px;
     padding-bottom: 40px;
+    padding-top: 90px;
     @include max-screen($breakpoint-tablet){
         padding-bottom: 10px;
+        padding-top: 70px;
     }
     @at-root {
         &__contents {
