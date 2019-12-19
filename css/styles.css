@@ -545,13 +545,13 @@
   margin: 0 auto;
   background-color: #ffffff;
   padding-bottom: 40px;
-  padding-top: 90px;
+  padding-top: 100px;
 }
 
 @media screen and (max-width: 960px) {
   .BestPlice {
     padding-bottom: 10px;
-    padding-top: 70px;
+    padding-top: 75px;
   }
 }
 
@@ -664,6 +664,7 @@
 .BestPlice__triangle {
   display: block;
   margin-top: 40px;
+  margin-bottom: -50px;
   text-align: center;
   color: #7bcedb;
   font-size: 50px;
@@ -677,6 +678,18 @@
 }
 
 .Label1 {
+  width: 100%;
+  height: 70px;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 960px) {
+  .Label1 {
+    padding-top: 65px;
+  }
+}
+
+.Label1__bg {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -714,8 +727,14 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 160px;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .PlicePlan {
+    padding-top: 90px;
+  }
 }
 
 .PlicePlan__contents {
@@ -1208,6 +1227,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
+  margin-bottom: -60px;
 }
 
 .Media__contents {
@@ -1733,4 +1753,54 @@ body .toPageTop:hover {
 
 body .toPageTop img {
   width: 100%;
+}
+
+.Toptext {
+  width: 100%;
+  max-width: 960px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 141px;
+}
+
+@media screen and (max-width: 960px) {
+  .Toptext {
+    height: 100px;
+  }
+}
+
+.Toptext__innerMsg {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -62px;
+  text-align: center;
+  color: #00a0b9;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  .Toptext__innerMsg {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Toptext__innerMsg {
+    font-size: 18px;
+  }
+}
+
+.Toptext__innerMsg br {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .Toptext__innerMsg br {
+    display: block;
+  }
 }

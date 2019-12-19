@@ -2,8 +2,11 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 160px;
     padding-bottom: 40px;
+    @include max-screen($breakpoint-tablet){
+        padding-top: 90px;
+    }
     @at-root {
         &__contents {
             width: 100%;
