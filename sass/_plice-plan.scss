@@ -2,8 +2,11 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 160px;
     padding-bottom: 40px;
+    @include max-screen($breakpoint-tablet){
+        padding-top: 90px;
+    }
     @at-root {
         &__contents {
             width: 100%;
@@ -81,9 +84,11 @@
             flex-flow: column;
             border: 1px solid #00a0b9;
             margin-top: 20px;
+            height: auto;
             $this: &;
             @include max-screen($breakpoint-tablet) {
                 margin-top: 5px;
+                max-height: 160px;
             }
             &--recommend {
                 @extend #{$this};
@@ -205,15 +210,43 @@
             width: 100%;
             text-align: center;
         }
+        &__imgOuter {
+            display: block;
+            position: relative;
+            width: 96%;
+            margin: 0 auto;
+            $this: &;
+            &--2{
+                @extend #{$this};
+                margin-top: 20px;
+            }
+        }
+        &__imgCover {
+            width: 97%;
+            height: 96%;
+            position: absolute;
+            left: 1.5%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            p{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: bold;
+                @include max-screen($breakpoint-tablet){
+                    font-size: 26px;
+                }
+            }
+        }
         &__sleepImg {
             display: block;
-            width: 93%;
-            margin: 0 auto;
-            margin-top: 20px;
+            width: 100%;
         }
         &__callImg {
             display: block;
-            width: 93%;
+            width: 100%;
             margin: 0 auto;
         }
     }

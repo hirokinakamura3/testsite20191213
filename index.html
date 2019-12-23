@@ -49,10 +49,11 @@
                 <a class="Header__itemInner2--red" href="#Label1">購入する</a>
             </li>
         </ul>
-        <div class="Header__msg">
-            <p class="Header__msgInner">介護施設を経営する<br class="sp_br">インフィックグループが開発・運営</p>
-        </div>
+
     </header>
+    <div class="Toptext">
+        <p class="Toptext__innerMsg">介護施設を経営する<br class="sp_br">インフィックグループが開発・運営</p>
+    </div>
     <!-- PC用 -->
     <div class="swiper-container slider1">
         <!-- Additional required wrapper -->
@@ -77,7 +78,7 @@
             <!-- Slides -->
             <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_01_sp.png"></div>
             <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_02_sp.png"></div>
-            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_03_sp.png"></div>
+            <div class="swiper-slide img"><img class="swiper__innerImg" src="images/slider1_03_sp.jpg"></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -98,7 +99,7 @@
                     <span>異変の予兆</span>から<span>現在の様子</span>まで<br>
                     タイムリーに<span>お伝え</span>します!
                 </p>
-                <a class="Catch__btn" href="">介護施設運営の方はこちら</a>
+                <a class="Catch__btn" href="https://facility.lashic.jp">介護施設運営の方はこちら</a>
                 <a class="Catch__btn--orange" href="#plan">料金詳細を見る</a>
             </section>
         </div>
@@ -139,7 +140,7 @@
         </div>
     </div>
 
-    <div class="BestPlice">
+    <div class="BestPlice" id="plan">
         <div class="BestPlice__contents">
             <section class="BestPlice__section">
                 <h1 class="BestPlice__ttl">
@@ -148,7 +149,7 @@
                 <h2 class="BestPlice__ttl2">
                     <img class="BestPlice__ttl2Inner" src="./images/container4_title2.png" alt="">
                 </h2>
-                <p class="BestPlice__plan" id="plan">料金プラン</p>
+                <p class="BestPlice__plan">料金プラン</p>
                 <div class="BestPlice__priceList">
                     <img class="BestPlice__priceImg" src="./images/container4_price1.png" alt="">
                     <p class="BestPlice__plus">&#x271a;</p>
@@ -161,10 +162,13 @@
     </div>
 
     <div class="Label1" id="Label1">
-        <div class="Label1__contents">
-            <p class="Label1__txt">購入申込</p>
+        <div class="Label1__bg">
+            <div class="Label1__contents">
+                <p class="Label1__txt">購入申込</p>
+            </div>
         </div>
     </div>
+
 
     <form action="#" method="post">
         <div class="PlicePlan">
@@ -215,8 +219,19 @@
                     <p class="PlicePlan__caution">※別途消費税がかかります</p>
                     <img class="PlicePlan__more" src="./images/container6_h2.png" alt="">
                     <p class="PlicePlan__toBeRelease">※リリース予定</p>
-                    <img class="PlicePlan__sleepImg" src="./images/lashic_sleep.png" alt="">
-                    <img class="PlicePlan__callImg" src="./images/lashic_call.png" alt="">
+                    <div class="PlicePlan__imgOuter">
+                        <div class="PlicePlan__imgCover">
+                            <p>リリース予定</p>
+                        </div>
+                        <img class="PlicePlan__sleepImg" src="./images/lashic_sleep.png" alt="">
+                    </div>
+                    <div class="PlicePlan__imgOuter--2">
+                        <div class="PlicePlan__imgCover">
+                            <p>リリース予定</p>
+                        </div>
+                        <img class="PlicePlan__callImg" src="./images/lashic_call.png" alt="">
+                    </div>
+
                 </section>
             </div>
         </div>
@@ -516,8 +531,12 @@
     <script>
         var mySwiper = new Swiper('.slider1', {
             autoplay: {
+<<<<<<< HEAD
                 delay: 4000,
                 disableOnInteraction: false,
+=======
+                delay: 5000,
+>>>>>>> cd1dbc0edc1e759b2233f6c5860c9a7714a1c5f4
             },
             speed: 400,
             loop: true,
