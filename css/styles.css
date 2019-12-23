@@ -48,6 +48,12 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .Header__item:last-child {
+    display: none;
+  }
+}
+
 .Header__itemInner1 {
   width: 100%;
 }
@@ -83,52 +89,41 @@
   color: #ffffff;
 }
 
-.Header__msg {
+.Header__login {
   width: 100%;
-  max-width: 960px;
-  height: 50px;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
+  flex-flow: column;
 }
 
 @media screen and (max-width: 960px) {
-  .Header__msg {
-    height: 100px;
+  .Header__login {
+    display: none;
   }
 }
 
-.Header__msgInner {
+.Header__loginMsg {
   display: block;
-  width: 100%;
-  margin: 0 auto;
+  font-size: 12px;
   text-align: center;
+}
+
+.Header__loginBox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header__loginBox img {
+  display: block;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.Header__loginBox p {
+  display: block;
   color: #00a0b9;
   font-weight: bold;
-  font-size: 24px;
-}
-
-@media screen and (max-width: 960px) {
-  .Header__msgInner {
-    padding-bottom: 20px;
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .Header__msgInner {
-    font-size: 18px;
-  }
-}
-
-.Header__msgInner br {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .Header__msgInner br {
-    display: block;
-  }
 }
 
 .swiper-container {
@@ -1764,7 +1759,7 @@ body .toPageTop img {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-top: 141px;
+  padding-top: 80px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1805,4 +1800,42 @@ body .toPageTop img {
   .Toptext__innerMsg br {
     display: block;
   }
+}
+
+.Login {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+@media screen and (min-width: 960px) {
+  .Login {
+    display: none;
+  }
+}
+
+.Login__message {
+  display: inline;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.Login__box {
+  display: flex;
+  align-items: center;
+}
+
+.Login__boxInnerImg {
+  width: 20px;
+}
+
+.Login__boxInnerText {
+  font-size: 15px;
+  color: #00a0b9;
+  font-weight: bold;
+  display: block;
+  padding-left: 5px;
 }
