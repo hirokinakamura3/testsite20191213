@@ -119,10 +119,13 @@
             display: flex;
             flex-flow: column;
             padding: 20px;
+            height: 260px;
+            position: relative;
             @include max-screen($breakpoint-tablet) {
                 padding: 0px;
                 padding-bottom: 15px;
                 padding-top: 10px;
+                height: 160px;
             }
         }
         &__txt1 {
@@ -175,6 +178,9 @@
             box-shadow: 0px 4px 0px 0px #b2095b;
             outline: none;
             border: none;
+            position: absolute;
+            bottom: 14%;
+            left: 5%;;
             &:hover {
                 cursor: pointer;
             }
@@ -185,6 +191,8 @@
             @include max-screen($breakpoint-tablet) {
                 font-size: 12px;
                 margin-top: 9px;
+                bottom: 9%;
+                left: 5%;
             }
         }
         &__caution {
