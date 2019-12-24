@@ -142,9 +142,9 @@
             }
             &--perMonth {
                 @extend #{$this};
-                line-height: 110px;
+                padding-bottom: 17%;
                 @include max-screen($breakpoint-tablet) {
-                    line-height: 393%;
+                    padding-bottom: 7%;
                 }
             }
         }

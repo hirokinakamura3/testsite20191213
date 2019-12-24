@@ -998,12 +998,12 @@
 }
 
 .PlicePlan__txt1--perMonth {
-  line-height: 110px;
+  padding-bottom: 17%;
 }
 
 @media screen and (max-width: 960px) {
   .PlicePlan__txt1--perMonth {
-    line-height: 393%;
+    padding-bottom: 7%;
   }
 }
 
