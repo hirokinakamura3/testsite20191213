@@ -31,7 +31,10 @@ window.onload = function () {
 window.onscroll = function () {
     loginToggle();
 }
-matchMedia(`(max-width: ${tablet})`).addListener(loginToggle);
+matchMedia(`(max-width: ${tablet})`).addListener(header);
+function header(){
+ document.querySelector('.Header__item:last-child').style.display = 'none';
+}
 
 function loginToggle() {
     if (matchMedia(`(max-width: ${tablet} )`).matches) {
